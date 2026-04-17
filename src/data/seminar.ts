@@ -30,6 +30,7 @@ export interface Speaker {
   topic: string;
   initials: string;
   color: string;
+  image?: string;
 }
 
 export interface Track {
@@ -118,6 +119,7 @@ export interface Hotel {
   priceRange: string;
   stars: number;
   address: string;
+  bookingLink: string;
 }
 
 export interface TransportOption {
@@ -138,7 +140,7 @@ export interface Highlight {
 // ─── Seminar Info ─────────────────────────────────────────────────────────────
 
 export const seminarInfo: SeminarInfo = {
-  name: "The International Seminar on Global Sustainable Business Transformation with NextGen Information Technology",
+  name: "The International Conference on Global Sustainable Business Transformation with NextGen Information Technology",
   shortName: "NextGen IT & Business Seminar 2026",
   acronym: "NEXTGEN2026",
   dateRange: "14–15 July 2026",
@@ -173,6 +175,7 @@ export const speakers: Speaker[] = [
     topic: "Digital Transformation for Sustainable Business Ecosystems",
     initials: "YK",
     color: "#1a2e5a",
+    image: "/Yusniza.png",
   },
   {
     id: "speaker-2",
@@ -197,6 +200,7 @@ export const speakers: Speaker[] = [
     topic: "Artificial Intelligence as a Catalyst for Sustainable Development",
     initials: "NI",
     color: "#065f46",
+    image: "/Norisma.png",
   },
 ];
 
@@ -293,7 +297,7 @@ export const importantDates: ImportantDate[] = [
     label: "Conference Dates",
     date: "14–15 July 2026",
     description:
-      "The International Seminar takes place at Universiti Malaya, Kuala Lumpur.",
+      "The International Conference takes place at Universiti Malaya, Kuala Lumpur.",
     status: "upcoming",
   },
 ];
@@ -646,7 +650,7 @@ export const faqItems: FAQItem[] = [
     id: "faq-15",
     question: "Will the proceedings be published?",
     answer:
-      "Yes. Accepted and presented papers will be published in the official Proceedings of The International Seminar on Global Sustainable Business Transformation with NextGen Information Technology. Selected high-quality papers may be invited for extended publication in affiliated indexed journals.",
+      "Yes. Accepted and presented papers will be published in the official Proceedings of The International Conference on Global Sustainable Business Transformation with NextGen Information Technology. Selected high-quality papers may be invited for extended publication in affiliated indexed journals.",
     category: "general",
   },
 ];
@@ -660,18 +664,12 @@ export const committeeGroups: CommitteeGroup[] = [
     members: [
       {
         id: "p1",
-        name: "Yang Berbahagia Prof. Datuk Dr. [Name]",
-        role: "Vice-Chancellor, Universiti Malaya",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "p2",
         name: "Prof. Dr. [Dean Name]",
         role: "Dean, Faculty of Computer Science & IT",
         institution: "Universiti Malaya",
       },
       {
-        id: "p3",
+        id: "p2",
         name: "Prof. Dr. [Dean Name]",
         role: "Dean, Faculty of Business & Economics",
         institution: "Universiti Malaya",
@@ -916,32 +914,32 @@ export const registrationTiers: RegistrationTier[] = [
   {
     id: "student",
     name: "Student",
-    localFee: "RM 200",
-    intlFee: "USD 60",
+    localFee: "RM 800",
+    intlFee: "RM 1200",
     description:
       "Enrolled undergraduate or postgraduate students with valid student ID",
   },
   {
     id: "academic",
     name: "Academic / Researcher",
-    localFee: "RM 400",
-    intlFee: "USD 130",
+    localFee: "RM 800",
+    intlFee: "RM 1200",
     description:
       "Academics, lecturers, researchers, and postdoctoral fellows",
   },
   {
     id: "industry",
     name: "Industry Professional",
-    localFee: "RM 600",
-    intlFee: "USD 180",
+    localFee: "RM 800",
+    intlFee: "RM 1200",
     description:
       "Professionals from the corporate, government, and non-profit sectors",
   },
   {
     id: "group",
     name: "Group Registration (3+ persons)",
-    localFee: "RM 350 / person",
-    intlFee: "USD 100 / person",
+    localFee: "RM 800 / person",
+    intlFee: "RM 1200 / person",
     description:
       "Minimum 3 participants from the same institution. 10% group discount applied.",
   },
@@ -952,27 +950,30 @@ export const registrationTiers: RegistrationTier[] = [
 export const hotels: Hotel[] = [
   {
     id: "hotel-1",
-    name: "University Malaya Hotel",
+    name: "Rumah Universiti",
     distance: "On Campus — 0.5 km",
-    priceRange: "RM 180 – RM 280 / night",
+    priceRange: "RM 165 – RM 311 / night",
     stars: 3,
     address: "Universiti Malaya Campus, 50603 Kuala Lumpur",
+    bookingLink: "https://my.trip.com/hotels/kuala-lumpur-hotel-detail-125760561/rumah-universiti/?allianceid=14900&sid=1621375&ppcid=ckid-_adid-_akid-_adgid-&utm_source=google&utm_medium=cpc&utm_campaign=23000362012&gad_source=1&gad_campaignid=23007725206&gbraid=0AAAAABn2eFI_fsN_vAKeWA_4-gCFDl9X7&gclid=Cj0KCQjwkYLPBhC3ARIsAIyHi3TXXx4JDKJ8yBTPXKAgQS0vmoKjTiB1H_FEyHC3LJMPvxBSCaFq6w4aAmlWEALw_wcB",
   },
   {
     id: "hotel-2",
-    name: "Tune Hotel — PJ",
-    distance: "3.2 km from UM",
-    priceRange: "RM 80 – RM 150 / night",
+    name: "Urban Living - Mahsa Avenue",
+    distance: "2.6 km from UM",
+    priceRange: "RM 107 – RM 326 / night",
     stars: 3,
-    address: "Jalan SS 7/26, Kelana Jaya, Petaling Jaya, Selangor",
+    address: "Block B, Level 4, Jalan Ilmu, Off Jalan Universiti, Seputeh, Kuala Lumpur, 59100, Malaysia",
+    bookingLink: "https://my.trip.com/m/hotels/detail/?hotelId=54490383&subStamp=425&checkIn=2026-07-14&checkOut=2026-07-15&adult=2&children=0&ages=&types=&crn=1&travelpurpose=0&UniqueKey=H4sIAAAAAAAA_-NaysTFJMEkxMTBKDWLiaP38YTdrBa_BR0ZQOBCmoNn_6GvGjHLMxwCeArBYgwRDo2MHg-rRNap-ztMYqznBAs6pDoIghkCSQ5KLhyrn64NEFCU-P1n-UpmBUZNsExDkIMhjGFxVMIRZoYnjBHEyrGSWYIpipVjrowEi5KCAgtEI4MZVCOQYfGME6jsKKcESxSDEzPHKsYZjP2v_kquYGTcyPhNI6b_UKmuww5GphOM2QuY5l1fabaLCaToEBMrxzU2CZZTTAyXmBhuMTE8Agrc15JgecXE8IkJYt8vsMomZoYuZoZJzBD1s5ghyhYxM0jxpqYYpCYZWZoZGJuYmSoIacye3XaezUhpEiOTb-QpRilDcxNTcxMzYzMjS1NLPRNjQ5OiqoKq0pJICytmKUY3D8YgNiMnc0dH1ygtLmbfyCBBzbe8-wxm_raXAvEUYTwtEM8QxktiTc3T9Y3M2C9awNjFyCHA6MEYwVjB-IoRpOoH2OsAbetCMcEBAAA&roomKey=&roomToken=&masterhotelid_tracelogid=ed0eb29603465&cityId=315&listScene=0&fromPageId=10320668590&allSelectedFilters=17%241%7E80%2480%7C0%7C1%210&priceCurr=MYR&display=exavg&fromList=1",
   },
   {
     id: "hotel-3",
     name: "Cititel Mid Valley",
     distance: "5.0 km from UM",
-    priceRange: "RM 220 – RM 380 / night",
+    priceRange: "RM 178 – RM 270 / night",
     stars: 4,
     address: "Mid Valley City, Lingkaran Syed Putra, 59200 Kuala Lumpur",
+    bookingLink: "https://my.trip.com/m/hotels/detail/?hotelId=760016&subStamp=1445&checkIn=2026-07-14&checkOut=2026-07-15&adult=2&children=0&ages=&types=&crn=1&travelpurpose=0&UniqueKey=H4sIAAAAAAAA_-N6zsjFJMEkxMTBKHWHkWP_g807GYW4DI1MDA3MDQwMjAxWMFosFXIstOW6vlim2MHz7BkgWFLiEMBTyAACDV4OkxhtOK8vLrDlEvdxEAQzwt0clBQUWDRhKgxhDItnnEGsHA_FJViiGJzYOM6tZZRgmcF4YaPeCkbGjYyHv2rE9DdZOOxgZDrBuIlxAVP79PxdTFBlh5hYOXq5JVhOMTFcYmK4xcTwiAli0ismhk9MDL9g6pqYGbqYGSYxQ1TPYoYoWsTMIMVrbGpqlpximWicZp5soiCk8X1223k2I6VJjEy-kacYpQzNTUzNTcyMzYwsTS31TIwNTYqqCqpKSyItrJilGN08GIPYzM1MnMzcorS4mEODXQSd12beK_SSdpBi9o0MUtR8y7vPYOZvey0QzxDGS2JNzdP1jczYL1rA2MXIIcDowRjBWMH4ihGk6gfI6wCXUqhaggEAAA&roomKey=&roomToken=&masterhotelid_tracelogid=3556cd9a3f7c4&cityId=315&listScene=0&fromPageId=10320668590&allSelectedFilters=17%241%7E80%2480%7C0%7C1%210&priceCurr=MYR&display=exavg&fromList=1",
   },
 ];
 

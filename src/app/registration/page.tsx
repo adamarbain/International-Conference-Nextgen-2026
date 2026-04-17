@@ -1,16 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import {
-  ArrowRight,
-  Check,
-  AlertCircle,
-  Package,
-  CreditCard,
-  UserCheck,
-  ClipboardCheck,
-  Mail,
-} from "lucide-react";
+import { ArrowRight, Check, AlertCircle, Package } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -31,33 +22,6 @@ const inclusions = [
   "Access to post-conference session recordings (where available)",
 ];
 
-const steps = [
-  {
-    step: 1,
-    icon: UserCheck,
-    title: "Create Your Account",
-    desc: "Register on the online portal with your name, email, and institutional affiliation.",
-  },
-  {
-    step: 2,
-    icon: ClipboardCheck,
-    title: "Select Your Category",
-    desc: "Choose the registration category that best describes your status (student, academic, or industry).",
-  },
-  {
-    step: 3,
-    icon: CreditCard,
-    title: "Complete Payment",
-    desc: "Pay via bank transfer, credit/debit card, or online banking. Payment proof must be uploaded.",
-  },
-  {
-    step: 4,
-    icon: Mail,
-    title: "Receive Confirmation",
-    desc: "A confirmation email with your registration ID and programme details will be sent within 3 working days.",
-  },
-];
-
 export default function RegistrationPage() {
   const prefersReducedMotion = useReducedMotion();
 
@@ -71,7 +35,7 @@ export default function RegistrationPage() {
       <Navbar />
       <PageHero
         title="Registration"
-        subtitle="Secure your place at the International Seminar — 14–15 July 2026"
+        subtitle="Secure your place at the International Conference — 14–15 July 2026"
         badge="Open for Registration"
       />
 
@@ -92,7 +56,7 @@ export default function RegistrationPage() {
               Registration Fees
             </h2>
             <p className="mt-3 text-gray-500">
-              Early bird rates apply for registrations made before 31 May 2026
+              Early bird rates apply for registrations made before 14 June 2026
             </p>
           </motion.div>
 
@@ -103,17 +67,17 @@ export default function RegistrationPage() {
             viewport={{ once: true }}
             className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm"
           >
-            <table className="w-full min-w-[560px]">
+            <table className="w-full min-w-[760px]">
               <thead>
                 <tr className="bg-navy text-white">
                   <th className="px-6 py-4 text-left text-sm font-semibold">
                     Category
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-semibold">
-                    Local (RM)
+                    Early Bird (RM)
                   </th>
                   <th className="px-6 py-4 text-center text-sm font-semibold">
-                    International (USD)
+                    Normal (RM)
                   </th>
                 </tr>
               </thead>
@@ -150,7 +114,7 @@ export default function RegistrationPage() {
             </table>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             variants={prefersReducedMotion ? {} : fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -159,12 +123,12 @@ export default function RegistrationPage() {
           >
             <AlertCircle size={16} className="text-amber-600 shrink-0 mt-0.5" />
             <p className="text-xs text-amber-800">
-              <strong>Early Bird Discount:</strong> A 15% early bird discount is
-              available for all registrations completed before 31 May 2026. Fees
+              <strong>Early Bird Discount:</strong> A RM400 early bird discount is
+              available for all registrations completed before 14 June 2026. Fees
               shown above are standard rates. Presenting authors must be
               registered to have their paper included in the proceedings.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 
@@ -223,7 +187,7 @@ export default function RegistrationPage() {
         </div>
       </section>
 
-      {/* ── Registration Steps ─────────────────────────────────────────── */}
+      {/* ── Register CTA ─────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -231,54 +195,7 @@ export default function RegistrationPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <p className="text-xs font-bold text-gold uppercase tracking-widest mb-2">
-              How to Register
-            </p>
-            <h2 className="text-3xl font-extrabold text-navy">
-              Registration Steps
-            </h2>
-          </motion.div>
-
-          <motion.div
-            variants={prefersReducedMotion ? {} : staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          >
-            {steps.map((s) => {
-              const Icon = s.icon;
-              return (
-                <motion.div
-                  key={s.step}
-                  variants={prefersReducedMotion ? {} : fadeUp}
-                  className="text-center"
-                >
-                  <div className="relative inline-flex items-center justify-center w-14 h-14 bg-navy rounded-2xl mb-4 shadow-md">
-                    <Icon size={22} className="text-white" />
-                    <span className="absolute -top-2 -right-2 w-6 h-6 bg-gold text-navy-dark text-xs font-extrabold rounded-full flex items-center justify-center">
-                      {s.step}
-                    </span>
-                  </div>
-                  <h3 className="text-navy font-bold text-sm mb-2">
-                    {s.title}
-                  </h3>
-                  <p className="text-gray-500 text-xs leading-relaxed">
-                    {s.desc}
-                  </p>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-12 text-center"
+            className="text-center"
           >
             <a
               href="#"

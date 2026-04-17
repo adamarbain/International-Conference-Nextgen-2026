@@ -59,11 +59,13 @@ export default function VenuePage() {
                 Conference Venue
               </p>
               <h2 className="text-3xl font-extrabold text-navy mb-5">
-                Universiti Malaya
+                Faculty of Computer Science & Information Technology, Universiti
+                Malaya
               </h2>
               <div className="flex items-start gap-2 mb-5">
                 <MapPin size={16} className="text-gold shrink-0 mt-1" />
                 <p className="text-gray-600">
+                  Faculty of Computer Science & Information Technology,
                   Universiti Malaya, 50603 Kuala Lumpur, Malaysia
                 </p>
               </div>
@@ -77,8 +79,7 @@ export default function VenuePage() {
                 </p>
                 <p>
                   The seminar will be hosted at the Faculty of Computer Science
-                  & Information Technology and the Faculty of Business &
-                  Economics, both located within the main UM campus. Detailed
+                  & Information Technology (FSKTM), Universiti Malaya. Detailed
                   room and hall assignments will be provided in the final
                   programme booklet distributed to all registered participants.
                 </p>
@@ -102,27 +103,37 @@ export default function VenuePage() {
               </div>
             </motion.div>
 
-            {/* Map Placeholder */}
+            {/* Interactive Map */}
             <motion.div
               variants={prefersReducedMotion ? {} : fadeUp}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <div className="rounded-2xl overflow-hidden border-2 border-dashed border-gray-300 bg-gray-50 h-80 flex flex-col items-center justify-center text-center p-8">
-                <MapPin size={36} className="text-gray-300 mb-3" />
-                <p className="text-gray-400 font-semibold text-sm mb-1">
-                  Interactive Map
-                </p>
-                <p className="text-xs text-gray-400 max-w-xs">
-                  An interactive Google Maps embed will appear here in the final
-                  version. Address: Universiti Malaya, 50603 Kuala Lumpur,
-                  Malaysia
-                </p>
-                <div className="mt-4 bg-white rounded-lg px-4 py-2 border border-gray-200 text-xs text-navy font-medium flex items-center gap-2">
+              <div className="rounded-2xl overflow-hidden border border-gray-200 bg-white h-80">
+                <iframe
+                  title="Map to Faculty of Computer Science & Information Technology, Universiti Malaya"
+                  src="https://www.google.com/maps?q=Faculty%20of%20Computer%20Science%20%26%20Information%20Technology%2C%20Universiti%20Malaya&output=embed"
+                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  allowFullScreen
+                />
+              </div>
+
+              <div className="mt-4 flex flex-wrap items-center gap-3">
+                <div className="bg-white rounded-lg px-4 py-2 border border-gray-200 text-xs text-navy font-medium flex items-center gap-2">
                   <MapPin size={12} />
                   3°7&apos;19&quot;N 101°39&apos;14&quot;E
                 </div>
+                <a
+                  href="https://maps.google.com/?q=Faculty+of+Computer+Science+%26+Information+Technology,+Universiti+Malaya"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-navy hover:text-gold transition-colors"
+                >
+                  Open in Google Maps <ExternalLink size={12} />
+                </a>
               </div>
 
               <div className="mt-4 bg-blue-50 rounded-xl p-4 border border-blue-100 flex items-start gap-3">
@@ -228,7 +239,9 @@ export default function VenuePage() {
             viewport={{ once: true }}
             className="grid md:grid-cols-3 gap-6"
           >
-            {hotels.map((hotel) => (
+            {hotels.map((hotel) => {
+              const bookingIsExternal = /^https?:\/\//i.test(hotel.bookingLink);
+              return (
               <motion.div
                 key={hotel.id}
                 variants={prefersReducedMotion ? {} : fadeUp}
@@ -281,7 +294,13 @@ export default function VenuePage() {
                       </p>
                     </div>
                     <a
-                      href="#"
+                      href={hotel.bookingLink}
+                      {...(bookingIsExternal
+                        ? {
+                            target: "_blank" as const,
+                            rel: "noopener noreferrer",
+                          }
+                        : {})}
                       className="inline-flex items-center gap-1 text-navy text-xs font-semibold hover:text-gold transition-colors"
                     >
                       Book <ExternalLink size={12} />
@@ -289,7 +308,8 @@ export default function VenuePage() {
                   </div>
                 </div>
               </motion.div>
-            ))}
+            );
+            })}
           </motion.div>
         </div>
       </section>

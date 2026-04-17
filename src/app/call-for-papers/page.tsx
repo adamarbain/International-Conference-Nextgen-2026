@@ -36,8 +36,8 @@ const submissionGuidelines = [
   {
     id: "format",
     title: "File Format",
-    value: "PDF or DOCX",
-    desc: "Submissions must be in PDF or Microsoft Word (.docx) format using the official proceedings template.",
+    value: "PDF",
+    desc: "Submissions must be in PDF format using the official proceedings template.",
   },
   {
     id: "blind",
@@ -93,7 +93,7 @@ export default function CallForPapersPage() {
             </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                The International Seminar on Global Sustainable Business
+                The International Conference on Global Sustainable Business
                 Transformation with NextGen Information Technology welcomes
                 original contributions addressing the intersection of digital
                 technologies, sustainable development, and business
@@ -318,7 +318,7 @@ export default function CallForPapersPage() {
                   official proceedings:
                 </p>
                 <p className="text-navy font-semibold text-sm bg-white rounded-lg p-3 border border-blue-200 italic">
-                  &ldquo;Proceedings of The International Seminar on Global
+                  &ldquo;Proceedings of The International Conference on Global
                   Sustainable Business Transformation with NextGen Information
                   Technology&rdquo;
                 </p>

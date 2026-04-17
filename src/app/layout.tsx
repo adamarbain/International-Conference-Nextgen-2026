@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NextGen IT & Business Seminar 2026",
   description:
-    "The International Seminar on Global Sustainable Business Transformation with NextGen Information Technology — 14–15 July 2026, Universiti Malaya, Kuala Lumpur, Malaysia.",
+    "The International Conference on Global Sustainable Business Transformation with NextGen Information Technology — 14–15 July 2026, Universiti Malaya, Kuala Lumpur, Malaysia.",
 };
 
 export default function RootLayout({

@@ -34,7 +34,7 @@ export default function CommitteePage() {
       <Navbar />
       <PageHero
         title="Organising Committee"
-        subtitle="Meet the dedicated team behind the International Seminar 2026"
+        subtitle="Meet the dedicated team behind the International Conference 2026"
         badge="Committee"
       />
 

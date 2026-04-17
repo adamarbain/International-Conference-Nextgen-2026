@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { Building2, Tag } from "lucide-react";
 import type { Speaker } from "@/data/seminar";
@@ -15,6 +16,7 @@ export default function SpeakerCard({
   large = false,
 }: SpeakerCardProps) {
   const prefersReducedMotion = useReducedMotion();
+  const avatarSize = large ? 140 : 110;
 
   return (
     <motion.div
@@ -28,20 +30,38 @@ export default function SpeakerCard({
         className="flex items-center justify-center"
         style={{
           background: `linear-gradient(135deg, ${speaker.color}22, ${speaker.color}44)`,
-          padding: large ? "2.5rem 0" : "1.75rem 0",
+          padding: large ? "2.25rem 0" : "1.5rem 0",
         }}
       >
-        <div
-          className="rounded-full flex items-center justify-center text-white font-bold shadow-md"
-          style={{
-            width: large ? 100 : 80,
-            height: large ? 100 : 80,
-            fontSize: large ? "2rem" : "1.5rem",
-            backgroundColor: speaker.color,
-          }}
-        >
-          {speaker.initials}
-        </div>
+        {speaker.image ? (
+          <div
+            className="relative rounded-full overflow-hidden shadow-md border-2 border-white/70 bg-white"
+            style={{
+              width: avatarSize,
+              height: avatarSize,
+            }}
+          >
+            <Image
+              src={speaker.image}
+              alt={speaker.name}
+              fill
+              className="object-cover"
+              sizes={large ? "140px" : "110px"}
+            />
+          </div>
+        ) : (
+          <div
+            className="rounded-full flex items-center justify-center text-white font-bold shadow-md"
+            style={{
+              width: avatarSize,
+              height: avatarSize,
+              fontSize: large ? "2.4rem" : "1.9rem",
+              backgroundColor: speaker.color,
+            }}
+          >
+            {speaker.initials}
+          </div>
+        )}
       </div>
 
       {/* Content */}

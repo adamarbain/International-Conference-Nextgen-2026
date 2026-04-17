@@ -90,7 +90,7 @@ export default function HomePage() {
               animate="visible"
               className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight mb-6"
             >
-              The International Seminar on{" "}
+              The International Conference on{" "}
               <span className="text-gold">
                 Global Sustainable Business Transformation
               </span>{" "}
@@ -445,7 +445,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Sponsors Strip ───────────────────────────────────────────────── */}
-      <section className="py-16 bg-white border-t border-gray-100">
+      {/* <section className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={prefersReducedMotion ? {} : fadeUp}
@@ -491,7 +491,7 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </motion.div>

@@ -23,14 +23,15 @@ function calculateTimeLeft(targetDate: Date): TimeLeft {
 }
 
 const TARGET = new Date("2026-07-14T09:00:00+08:00");
+const ZERO_TIME_LEFT: TimeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
 export default function CountdownTimer() {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft>(
-    calculateTimeLeft(TARGET)
-  );
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(ZERO_TIME_LEFT);
   const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
+    // Keep the first SSR/client render identical, then start the live countdown.
+    setTimeLeft(calculateTimeLeft(TARGET));
     const id = setInterval(() => {
       setTimeLeft(calculateTimeLeft(TARGET));
     }, 1000);

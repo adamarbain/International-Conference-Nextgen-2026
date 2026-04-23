@@ -132,6 +132,53 @@ export default function RegistrationPage() {
         </div>
       </section>
 
+      {/* Payment Info */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={prefersReducedMotion ? {} : fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-center mb-8"
+          >
+            <p className="text-xs font-bold text-gold uppercase tracking-widest mb-2">
+              Payment Information
+            </p>
+            <h2 className="text-3xl font-extrabold text-navy">
+              Bank Details for Registration Payment
+            </h2>
+          </motion.div>
+
+          <motion.div
+            variants={prefersReducedMotion ? {} : fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-gray-50 border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm"
+          >
+            <div className="space-y-3 text-sm sm:text-base text-gray-700">
+              <p>
+                <span className="font-semibold text-navy">Account Name:</span>{" "}
+                Colnet International Sdn. Bhd.
+              </p>
+              <p>
+                <span className="font-semibold text-navy">Bank:</span> Maybank
+              </p>
+              <p>
+                <span className="font-semibold text-navy">Account Number:</span>{" "}
+                5623 1132 0165
+              </p>
+              <p>
+                <span className="font-semibold text-navy">SWIFT Code:</span>{" "}
+                MBBEMYKL / MBBEMYKLPJY
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+
       {/* ── What's Included ────────────────────────────────────────────── */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

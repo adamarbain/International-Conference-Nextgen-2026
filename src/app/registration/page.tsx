@@ -245,7 +245,9 @@ export default function RegistrationPage() {
             className="text-center"
           >
             <a
-              href="#"
+              href="https://forms.gle/LoKTSakv4o1UjpeCA"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gold text-navy-dark font-bold px-9 py-4 rounded-xl hover:bg-gold-light transition-colors shadow-lg text-lg"
             >
               Register Now <ArrowRight size={20} />

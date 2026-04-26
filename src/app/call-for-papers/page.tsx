@@ -397,7 +397,9 @@ export default function CallForPapersPage() {
               Confirmation will be sent to your registered email address.
             </p>
             <a
-              href="#"
+              href="https://forms.gle/rBWtZcVBTFttbsSv6"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-navy text-white font-bold px-8 py-4 rounded-xl hover:bg-navy-light transition-colors shadow-lg"
             >
               <FileText size={18} />

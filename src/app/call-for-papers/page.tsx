@@ -8,6 +8,7 @@ import {
   CheckCircle,
   BookOpen,
   AlertCircle,
+  Download,
 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -231,6 +232,46 @@ export default function CallForPapersPage() {
                 <p className="text-sm text-gray-600 leading-relaxed">{g.desc}</p>
               </motion.div>
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* ── Paper Template ──────────────────────────────────────────────── */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={prefersReducedMotion ? {} : fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl p-8 border border-gray-200"
+          >
+            <div className="flex items-start gap-4">
+              <div className="w-12 h-12 bg-gold/20 rounded-xl flex items-center justify-center shrink-0">
+                <FileText size={22} className="text-navy" />
+              </div>
+              <div className="flex-1">
+                <p className="text-xs font-bold text-gold uppercase tracking-widest mb-2">
+                  Author Resources
+                </p>
+                <h3 className="text-navy font-bold text-xl mb-2">
+                  Example Paper Template
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-5">
+                  Download and use the official LaTeX template to format your
+                  manuscript before submission.
+                </p>
+                <a
+                  href="/ICGSBT%20LaTeX%20Template.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-navy text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-navy-light transition-colors"
+                >
+                  <Download size={16} />
+                  Download LaTeX Template (PDF)
+                </a>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>

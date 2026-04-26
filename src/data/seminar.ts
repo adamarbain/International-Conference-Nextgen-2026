@@ -179,15 +179,16 @@ export const speakers: Speaker[] = [
   },
   {
     id: "speaker-2",
-    name: "Industry Speaker (TBA)",
-    title: "Senior Executive",
+    name: "Datuk Lee Cheun Wei",
+    title: "Group Chief Executive Officer",
     role: "Keynote Speaker 2",
-    institution: "Industry Expert",
+    institution: "Ancom Nylex Berhad",
     keynoteNumber: 2,
-    bio: "A leading industry expert with extensive experience in NextGen digital technologies and global business transformation. This speaker brings a practitioner's perspective on how organisations are navigating the challenges and opportunities of sustainable digitalisation. Full details to be announced.",
-    topic: "Industry Perspectives on NextGen Digital Innovation",
-    initials: "IS",
+    bio: "Datuk Lee Cheun Wei is Group Chief Executive Officer of Ancom Nylex Berhad and Managing Director of Ancom Crop Care Sdn. Bhd., bringing extensive leadership experience in finance, corporate strategy, and agricultural chemicals. His career spans senior roles across listed companies, supported by strong academic credentials in accounting and finance and active membership in leading professional accounting bodies.",
+    topic: "Strategic Leadership in Sustainable Business Transformation",
+    initials: "LW",
     color: "#374151",
+    image: "/DATUK_LEE_CHEUN_WE.png",
   },
   {
     id: "speaker-3",
@@ -320,7 +321,7 @@ export const day1Schedule: ScheduleItem[] = [
   {
     time: "10:15am – 11:00am",
     title: "Keynote Address 2",
-    speaker: "Industry Speaker (TBA)",
+    speaker: "Datuk Lee Cheun Wei",
     type: "keynote",
   },
   {

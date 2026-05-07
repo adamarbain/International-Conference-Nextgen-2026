@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { User, Crown, Shield } from "lucide-react";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -71,7 +72,7 @@ export default function CommitteePage() {
                   {group.members.map((member) => (
                     <div
                       key={member.id}
-                      className={`rounded-xl p-5 border ${
+                      className={`rounded-xl p-5 border text-center ${
                         group.id === "patron"
                           ? "bg-gold/5 border-gold/30"
                           : group.id === "chair"
@@ -79,8 +80,20 @@ export default function CommitteePage() {
                           : "bg-gray-50 border-gray-200"
                       }`}
                     >
-                      <div className="w-11 h-11 rounded-full bg-navy flex items-center justify-center mb-3">
-                        <User size={18} className="text-white" />
+                      <div className="w-24 h-24 rounded-full overflow-hidden bg-navy/10 border border-white/60 mb-4 mx-auto">
+                        {member.image ? (
+                          <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={96}
+                            height={96}
+                            className="w-full h-full object-cover"
+                          />
+                        ) : (
+                          <div className="w-full h-full bg-navy flex items-center justify-center">
+                            <User size={18} className="text-white" />
+                          </div>
+                        )}
                       </div>
                       <p className="text-navy font-bold text-sm leading-tight mb-1">
                         {member.name}
@@ -101,7 +114,7 @@ export default function CommitteePage() {
       </section>
 
       {/* ── Sub-committees ─────────────────────────────────────────────── */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={prefersReducedMotion ? {} : fadeUp}
@@ -158,7 +171,7 @@ export default function CommitteePage() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section> */}
 
       {/* ── Join CTA ───────────────────────────────────────────────────── */}
       <section className="py-16 bg-navy text-white">
@@ -174,11 +187,11 @@ export default function CommitteePage() {
             </h2>
             <p className="text-blue-200 mb-6 text-sm leading-relaxed">
               We welcome volunteers from Universiti Malaya to support the
-              operations of the seminar. If you are interested in joining the
+              operations of the conference. If you are interested in joining the
               organizing team, please reach out to the secretariat.
             </p>
             <a
-              href="mailto:nextgen2026@um.edu.my"
+              href="mailto:ainuddin@um.edu.my"
               className="inline-flex items-center gap-2 bg-gold text-navy-dark font-bold px-7 py-3 rounded-xl hover:bg-gold-light transition-colors"
             >
               Contact the Secretariat

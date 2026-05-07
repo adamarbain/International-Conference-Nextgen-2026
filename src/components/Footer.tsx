@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { seminarInfo } from "@/data/seminar";
 
 const quickLinks = [
@@ -30,7 +30,7 @@ export default function Footer() {
                 </span>
               </div>
               <span className="font-bold text-white text-sm">
-                UM NextGen 2026
+                ICGSBT 2026
               </span>
             </div>
             <p className="text-blue-200 text-sm leading-relaxed">
@@ -78,10 +78,6 @@ export default function Footer() {
                 >
                   {seminarInfo.email}
                 </a>
-              </li>
-              <li className="flex items-start gap-2.5 text-sm text-blue-200">
-                <Phone size={15} className="text-gold shrink-0 mt-0.5" />
-                <span>{seminarInfo.phone}</span>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-blue-200">
                 <MapPin size={15} className="text-gold shrink-0 mt-0.5" />

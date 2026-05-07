@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Building2 } from "lucide-react";
+import { Mail, MapPin, Send, Building2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -41,7 +41,7 @@ export default function ContactPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid sm:grid-cols-3 gap-6 mb-16"
+            className="grid sm:grid-cols-2 gap-6 mb-16"
           >
             {[
               {
@@ -50,13 +50,6 @@ export default function ContactPage() {
                 value: seminarInfo.email,
                 sub: "We respond within 2 working days",
                 href: `mailto:${seminarInfo.email}`,
-              },
-              {
-                icon: Phone,
-                title: "Phone",
-                value: seminarInfo.phone,
-                sub: "Mon–Fri, 9:00am–5:00pm MYT",
-                href: `tel:${seminarInfo.phone}`,
               },
               {
                 icon: MapPin,
@@ -116,7 +109,7 @@ export default function ContactPage() {
                 </p>
                 <p className="text-blue-300 text-sm leading-relaxed max-w-2xl">
                   Universiti Malaya is Malaysia&apos;s oldest and highest-ranked
-                  university. The seminar is jointly organised by the faculties
+                  university. The conference is jointly organised by the faculties
                   of Computer Science &amp; IT and Business &amp; Economics,
                   two of UM&apos;s flagship academic units.
                 </p>

@@ -227,7 +227,7 @@ export default function RegistrationPage() {
             <p className="font-semibold mb-1">Conference Kit</p>
             <p className="text-blue-200 text-sm">
               All participants receive a premium conference kit including the
-              programme booklet, note-taking materials, and exclusive seminar
+              programme booklet, note-taking materials, and exclusive conference
               memorabilia.
             </p>
           </motion.div>
@@ -270,7 +270,7 @@ export default function RegistrationPage() {
             </h2>
             <ul className="space-y-3">
               {[
-                "Each paper submission requires at least one registered author to present at the seminar.",
+                "Each paper submission requires at least one registered author to present at the conference.",
                 "Presenting authors must register at the Full Author rate or above — student registration does not cover paper presentation for non-student papers.",
                 "Cancellations before 1 June 2026: 70% refund. Between 1–30 June 2026: 30% refund. No refunds after 30 June 2026.",
                 "Substitutions (name changes) are accepted at any time at no charge with written notice to the secretariat.",

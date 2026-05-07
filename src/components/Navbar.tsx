@@ -40,7 +40,7 @@ export default function Navbar() {
             <div className="w-9 h-9 relative">
               <Image
                 src="/Gemini_Generated_Image_6vnjth6vnjth6vnj-removebg-preview.png"
-                alt="UM NextGen logo"
+                alt="ICGSBT logo"
                 fill
                 className="object-contain"
                 sizes="36px"
@@ -49,10 +49,10 @@ export default function Navbar() {
             </div>
             <div className="hidden sm:block">
               <span className="font-bold text-navy text-sm leading-tight block">
-                UM NextGen 2026
+                ICGSBT 2026
               </span>
               <span className="text-gray-400 text-xs leading-tight block">
-                NextGen IT & Business Seminar
+                Global Sustainable Business Transformation with NextGen IT
               </span>
             </div>
           </Link>

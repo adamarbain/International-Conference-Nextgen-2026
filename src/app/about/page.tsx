@@ -60,9 +60,9 @@ export default function AboutPage() {
     >
       <Navbar />
       <PageHero
-        title="About the Seminar"
+        title="About the Conference"
         subtitle="Understanding our mission, vision, and the global context that shapes this gathering"
-        badge="NEXTGEN2026"
+        badge="ICGSBT 2026"
       />
 
       {/* ── Background ─────────────────────────────────────────────────── */}
@@ -93,7 +93,7 @@ export default function AboutPage() {
               "The United Nations 2030 Agenda for Sustainable Development provides a global blueprint for peace, prosperity, and planetary well-being. At its core, the 17 Sustainable Development Goals (SDGs) call for transformative action across all sectors of the economy — demanding a fundamental rethinking of business models, governance frameworks, and technological infrastructure.",
               "In tandem with these global imperatives, the digital revolution is reshaping the landscape of commerce, governance, and society at an unprecedented pace. Artificial intelligence, big data analytics, blockchain, the Internet of Things, and cloud computing are no longer emerging technologies — they are the defining forces of the Fourth Industrial Revolution, reshaping industries from finance and manufacturing to agriculture and healthcare.",
               "Malaysia, as a rapidly developing digital economy, is uniquely positioned at the confluence of these global trends. The Malaysian Digital Economy Blueprint (MyDIGITAL) and the 12th Malaysia Plan articulate an ambitious vision for digital transformation that must be underpinned by rigorous academic research, evidence-based policy, and strong public-private partnerships.",
-              "It is within this rich and dynamic global context that the International Conference on Global Sustainable Business Transformation with NextGen Information Technology is convened. By bringing together leading scholars, industry pioneers, and policymakers from across the world, this seminar serves as a critical platform for advancing the intellectual and practical foundations of sustainable digital transformation.",
+              "It is within this rich and dynamic global context that the International Conference on Global Sustainable Business Transformation with NextGen Information Technology is convened. By bringing together leading scholars, industry pioneers, and policymakers from across the world, this conference serves as a critical platform for advancing the intellectual and practical foundations of sustainable digital transformation.",
             ].map((paragraph, i) => (
               <motion.p key={i} variants={prefersReducedMotion ? {} : fadeUp}>
                 {paragraph}
@@ -117,7 +117,7 @@ export default function AboutPage() {
               What We Aim to Achieve
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy">
-              Seminar Objectives
+              Conference Objectives
             </h2>
           </motion.div>
 
@@ -167,7 +167,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
           >
             <p className="text-xs font-bold text-gold uppercase tracking-widest mb-3">
-              Why This Seminar Matters
+              Why This Conference Matters
             </p>
             <h2 className="text-3xl font-extrabold mb-8">Justification</h2>
           </motion.div>
@@ -180,8 +180,8 @@ export default function AboutPage() {
           >
             {[
               "The intersection of sustainability and digital transformation represents one of the most critical and underexplored frontiers in contemporary research. While significant advances have been made in each domain independently, the synergistic relationship between NextGen digital technologies and sustainable business practices demands dedicated scholarly attention.",
-              "Existing international conferences tend to address either technology or sustainability in isolation. This seminar deliberately bridges these two domains — creating a unique interdisciplinary space where computer scientists and business scholars engage in productive dialogue with industry practitioners and government officials.",
-              "Furthermore, the seminar provides an essential platform for researchers from developing nations, particularly in Southeast Asia, to contribute to and benefit from global conversations on sustainable digital transformation. By hosting this gathering at Universiti Malaya, we are affirming Malaysia's role as a knowledge leader in the ASEAN region and beyond.",
+              "Existing international conferences tend to address either technology or sustainability in isolation. This conference deliberately bridges these two domains — creating a unique interdisciplinary space where computer scientists and business scholars engage in productive dialogue with industry practitioners and government officials.",
+              "Furthermore, the conference provides an essential platform for researchers from developing nations, particularly in Southeast Asia, to contribute to and benefit from global conversations on sustainable digital transformation. By hosting this gathering at Universiti Malaya, we are affirming Malaysia's role as a knowledge leader in the ASEAN region and beyond.",
             ].map((paragraph, i) => (
               <motion.p key={i} variants={prefersReducedMotion ? {} : fadeUp}>
                 {paragraph}

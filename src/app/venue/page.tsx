@@ -78,7 +78,7 @@ export default function VenuePage() {
                   world-class facilities for academic events.
                 </p>
                 <p>
-                  The seminar will be hosted at the Faculty of Computer Science
+                  The conference will be hosted at the Faculty of Computer Science
                   & Information Technology (FSKTM), Universiti Malaya. Detailed
                   room and hall assignments will be provided in the final
                   programme booklet distributed to all registered participants.
@@ -89,7 +89,7 @@ export default function VenuePage() {
                 {[
                   { label: "Campus Size", value: "309 hectares" },
                   { label: "Founded", value: "1949" },
-                  { label: "Distance from KLCC", value: "~8 km" },
+                  { label: "Distance from KLCC", value: "~8 km" }, 
                   { label: "Nearest LRT", value: "Universiti (KJ13)" },
                 ].map((item) => (
                   <div
@@ -349,10 +349,10 @@ export default function VenuePage() {
                     can be provided upon request to registered participants.
                     Please contact the secretariat at{" "}
                     <a
-                      href="mailto:nextgen2026@um.edu.my"
+                      href="mailto:ainuddin@um.edu.my"
                       className="text-gold hover:underline"
                     >
-                      {seminarInfo.email ?? "nextgen2026@um.edu.my"}
+                      {seminarInfo.email ?? "ainuddin@um.edu.my"}
                     </a>{" "}
                     with your full name, passport number, and registration
                     confirmation.
@@ -365,7 +365,7 @@ export default function VenuePage() {
                       www.imi.gov.my
                     </span>{" "}
                     and to apply for any required visa at least 6–8 weeks before
-                    the seminar date.
+                    the conference date.
                   </p>
                 </div>
               </div>

@@ -14,7 +14,6 @@ export interface SeminarInfo {
   university: string;
   format: string;
   email: string;
-  phone: string;
   address: string;
   organiserFaculties: string[];
 }
@@ -76,6 +75,7 @@ export interface CommitteeMember {
   name: string;
   role: string;
   institution?: string;
+  image?: string;
 }
 
 export interface CommitteeGroup {
@@ -141,8 +141,8 @@ export interface Highlight {
 
 export const seminarInfo: SeminarInfo = {
   name: "The International Conference on Global Sustainable Business Transformation with NextGen Information Technology",
-  shortName: "NextGen IT & Business Seminar 2026",
-  acronym: "NEXTGEN2026",
+  shortName: "NextGen IT & Business Conference 2026",
+  acronym: "ICGSBT2026",
   dateRange: "14–15 July 2026",
   startDate: "2026-07-14",
   endDate: "2026-07-15",
@@ -152,8 +152,7 @@ export const seminarInfo: SeminarInfo = {
   country: "Malaysia",
   university: "Universiti Malaya",
   format: "Physical (In-person)",
-  email: "nextgen2026@um.edu.my",
-  phone: "+60 3-XXXX XXXX",
+  email: "ainuddin@um.edu.my",
   address: "Universiti Malaya, 50603 Kuala Lumpur, Malaysia",
   organiserFaculties: [
     "Faculty of Computer Science & IT",
@@ -188,7 +187,7 @@ export const speakers: Speaker[] = [
     topic: "Strategic Leadership in Sustainable Business Transformation",
     initials: "LW",
     color: "#374151",
-    image: "/DATUK_LEE_CHEUN_WE.png",
+    image: "/DATUK_LEE_CHEUN_WE.jpg",
   },
   {
     id: "speaker-3",
@@ -551,7 +550,7 @@ export const parallelSession3: ParallelSessionRow[] = [
 export const faqItems: FAQItem[] = [
   {
     id: "faq-1",
-    question: "How do I register for the seminar?",
+    question: "How do I register for the conference?",
     answer:
       "Registration is completed online through our registration portal. Click 'Register Now' on the Registration page, fill in your details, select your registration category, and complete the payment process. A confirmation email will be sent upon successful registration.",
     category: "registration",
@@ -595,21 +594,21 @@ export const faqItems: FAQItem[] = [
     id: "faq-7",
     question: "Is there a virtual attendance option?",
     answer:
-      "The seminar is primarily an in-person event at Universiti Malaya. We are exploring hybrid options for international participants unable to travel. Please contact us at nextgen2026@um.edu.my for the latest updates on virtual attendance availability.",
+      "The conference is primarily an in-person event at Universiti Malaya. We are exploring hybrid options for international participants unable to travel. Please contact us at ainuddin@um.edu.my for the latest updates on virtual attendance availability.",
     category: "attendance",
   },
   {
     id: "faq-8",
     question: "Will I receive a certificate of participation?",
     answer:
-      "Yes. All registered participants receive a digital certificate of participation. Presenting authors additionally receive a certificate of presentation. Certificates are distributed electronically within two weeks after the seminar.",
+      "Yes. All registered participants receive a digital certificate of participation. Presenting authors additionally receive a certificate of presentation. Certificates are distributed electronically within two weeks after the conference.",
     category: "attendance",
   },
   {
     id: "faq-9",
-    question: "What is the dress code for the seminar?",
+    question: "What is the dress code for the conference?",
     answer:
-      "Business casual or smart casual attire is recommended for all seminar days. Traditional formal wear is equally welcome. Comfortable footwear is advised given campus distances between venues.",
+      "Business casual or smart casual attire is recommended for all conference days. Traditional formal wear is equally welcome. Comfortable footwear is advised given campus distances between venues.",
     category: "attendance",
   },
   {
@@ -623,7 +622,7 @@ export const faqItems: FAQItem[] = [
     id: "faq-11",
     question: "Is parking available at the venue?",
     answer:
-      "Yes, paid parking is available within the Universiti Malaya campus. Dedicated parking areas for seminar participants will be marked on the venue map in the final programme booklet. Daily parking rates apply.",
+      "Yes, paid parking is available within the Universiti Malaya campus. Dedicated parking areas for conference participants will be marked on the venue map in the final programme booklet. Daily parking rates apply.",
     category: "venue",
   },
   {
@@ -635,16 +634,16 @@ export const faqItems: FAQItem[] = [
   },
   {
     id: "faq-13",
-    question: "Who can attend the seminar?",
+    question: "Who can attend the conference?",
     answer:
-      "The seminar is open to academics, researchers, postgraduate students, industry professionals, and policymakers from all countries. We welcome participants from disciplines related to sustainability, digital transformation, business innovation, energy, and environmental science.",
+      "The conference is open to academics, researchers, postgraduate students, industry professionals, and policymakers from all countries. We welcome participants from disciplines related to sustainability, digital transformation, business innovation, energy, and environmental science.",
     category: "general",
   },
   {
     id: "faq-14",
-    question: "What language will the seminar be conducted in?",
+    question: "What language will the conference be conducted in?",
     answer:
-      "The official language of the seminar is English. All paper submissions, presentations, and proceedings are in English. Keynote addresses and Q&A sessions are also conducted in English.",
+      "The official language of the conference is English. All paper submissions, presentations, and proceedings are in English. Keynote addresses and Q&A sessions are also conducted in English.",
     category: "general",
   },
   {
@@ -665,15 +664,17 @@ export const committeeGroups: CommitteeGroup[] = [
     members: [
       {
         id: "p1",
-        name: "Prof. Dr. [Dean Name]",
+        name: "Assoc. Prof. Dr. Norisma Idris",
         role: "Dean, Faculty of Computer Science & IT",
         institution: "Universiti Malaya",
+        image: "/Norisma.png",
       },
       {
         id: "p2",
-        name: "Prof. Dr. [Dean Name]",
+        name: "Prof. Dr. Yusniza binti Kamarulzaman",
         role: "Dean, Faculty of Business & Economics",
         institution: "Universiti Malaya",
+        image: "/Yusniza.png",
       },
     ],
   },
@@ -686,6 +687,7 @@ export const committeeGroups: CommitteeGroup[] = [
         name: "Prof. Dr. Ainuddin Wahid bin Abdul Wahab",
         role: "Director, Center of Digital Transformation Impact",
         institution: "Universiti Malaya",
+        image: "/ainuddin.jpg",
       },
     ],
   },
@@ -695,9 +697,10 @@ export const committeeGroups: CommitteeGroup[] = [
     members: [
       {
         id: "s1",
-        name: "Prof. Dr. Siti Hafizah Ab Hamid",
-        role: "Secretariat Lead",
-        institution: "Faculty of Computer Science & IT, UM",
+        name: "Associate Professor Dr. Azni Zarina Taha",
+        role: "Secretariat",
+        institution: "Faculty of Business & Economics",
+        image: "/AZT.jpg",
       },
     ],
   },

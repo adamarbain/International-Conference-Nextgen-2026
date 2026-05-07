@@ -137,7 +137,7 @@ export default function HomePage() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <p className="text-xs text-blue-300 uppercase tracking-widest font-medium mb-3">
-                Seminar Begins In
+                Conference Begins In
               </p>
               <CountdownTimer />
             </motion.div>
@@ -174,7 +174,7 @@ export default function HomePage() {
                 viewport={{ once: true }}
                 className="text-xs font-bold text-gold uppercase tracking-widest mb-3"
               >
-                About the Seminar
+                About the Conference
               </motion.p>
               <motion.h2
                 variants={prefersReducedMotion ? {} : sectionHeadingVariant}
@@ -196,7 +196,7 @@ export default function HomePage() {
               >
                 <p>
                   Aligned with the United Nations 2030 Sustainable Development
-                  Goals, this seminar brings together academics, industry
+                  Goals, this conference brings together academics, industry
                   leaders, and policymakers to explore how NextGen digital
                   technologies can accelerate sustainable business
                   transformation.
@@ -204,7 +204,7 @@ export default function HomePage() {
                 <p>
                   Co-organised by the Faculty of Computer Science & IT and the
                   Faculty of Business & Economics at Universiti Malaya, the
-                  seminar fosters cross-disciplinary dialogue on AI, green
+                  conference fosters cross-disciplinary dialogue on AI, green
                   economy, digital trade, and sustainable development.
                 </p>
                 <p>

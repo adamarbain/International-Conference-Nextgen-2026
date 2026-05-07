@@ -33,7 +33,7 @@ export default function FAQPage() {
       <Navbar />
       <PageHero
         title="Frequently Asked Questions"
-        subtitle="Find answers to common questions about the seminar, registration, and submissions"
+        subtitle="Find answers to common questions about the conference, registration, and submissions"
         badge="FAQ"
       />
 

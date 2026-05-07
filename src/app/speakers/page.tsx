@@ -45,9 +45,9 @@ export default function SpeakersPage() {
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto">
               Each keynote address is carefully curated to advance the
-              seminar&apos;s themes of sustainable digital transformation,
+              conference&apos;s themes of sustainable digital transformation,
               NextGen technologies, and global business innovation.
-            </p>
+            </p>  
           </motion.div>
 
           <motion.div
@@ -125,7 +125,7 @@ export default function SpeakersPage() {
             <p className="text-blue-200 leading-relaxed mb-8 text-lg">
               We welcome distinguished academics and industry leaders to join
               our panel of keynote speakers. If you are interested in
-              presenting at the seminar, please contact our programme
+              presenting at the conference, please contact our programme
               committee.
             </p>
             <div className="flex flex-wrap justify-center gap-4">

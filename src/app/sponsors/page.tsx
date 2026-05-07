@@ -176,7 +176,7 @@ export default function SponsorsPage() {
               Partnership Value
             </p>
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy">
-              Why Sponsor This Seminar?
+              Why Sponsor This Conference?
             </h2>
           </motion.div>
 

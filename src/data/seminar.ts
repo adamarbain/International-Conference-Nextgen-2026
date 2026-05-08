@@ -706,24 +706,30 @@ export const committeeGroups: CommitteeGroup[] = [
   },
   {
     id: "academic",
-    title: "Academic Committee",
+    title: "Promotion Committee",
     members: [
       {
         id: "ac1",
-        name: "Dr. [Name Placeholder]",
-        role: "Academic Committee Chair",
+        name: "Faziah binti Othman",
+        role: "Head of Promotion Committee",
         institution: "Universiti Malaya",
       },
       {
         id: "ac2",
-        name: "Dr. [Name Placeholder]",
-        role: "Programme Reviewer",
+        name: "Dr. Mozard bin Mohtar",
+        role: "Promotion Committee",
         institution: "Universiti Malaya",
       },
       {
         id: "ac3",
-        name: "Dr. [Name Placeholder]",
-        role: "Publications Coordinator",
+        name: "Adam bin Arbain",
+        role: "Promotion Committee",
+        institution: "Universiti Malaya",
+      },
+      {
+        id: "ac4",
+        name: "Muhammad Addin bin Ahmad Suhaimi",
+        role: "Promotion Committee",
         institution: "Universiti Malaya",
       },
     ],

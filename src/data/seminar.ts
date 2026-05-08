@@ -734,126 +734,126 @@ export const committeeGroups: CommitteeGroup[] = [
       },
     ],
   },
-  {
-    id: "operations",
-    title: "Operations Team",
-    members: [
-      {
-        id: "op1",
-        name: "[Name Placeholder]",
-        role: "Operations Manager",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "op2",
-        name: "[Name Placeholder]",
-        role: "Venue Coordinator",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "op3",
-        name: "[Name Placeholder]",
-        role: "Registration Officer",
-        institution: "Universiti Malaya",
-      },
-    ],
-  },
-  {
-    id: "publicity",
-    title: "Publicity Team",
-    members: [
-      {
-        id: "pub1",
-        name: "[Name Placeholder]",
-        role: "Publicity Chair",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "pub2",
-        name: "[Name Placeholder]",
-        role: "Social Media Officer",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "pub3",
-        name: "[Name Placeholder]",
-        role: "Graphic Designer",
-        institution: "Universiti Malaya",
-      },
-    ],
-  },
-  {
-    id: "technical",
-    title: "Technical Team",
-    members: [
-      {
-        id: "tech1",
-        name: "[Name Placeholder]",
-        role: "Technical Chair",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "tech2",
-        name: "[Name Placeholder]",
-        role: "AV & Equipment Officer",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "tech3",
-        name: "[Name Placeholder]",
-        role: "IT Support Specialist",
-        institution: "Universiti Malaya",
-      },
-    ],
-  },
-  {
-    id: "protocol",
-    title: "Protocol Team",
-    members: [
-      {
-        id: "prot1",
-        name: "[Name Placeholder]",
-        role: "Protocol Chair",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "prot2",
-        name: "[Name Placeholder]",
-        role: "Guest Relations Officer",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "prot3",
-        name: "[Name Placeholder]",
-        role: "Ushering Coordinator",
-        institution: "Universiti Malaya",
-      },
-    ],
-  },
-  {
-    id: "logistics",
-    title: "Logistics Team",
-    members: [
-      {
-        id: "log1",
-        name: "[Name Placeholder]",
-        role: "Logistics Chair",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "log2",
-        name: "[Name Placeholder]",
-        role: "Transportation Coordinator",
-        institution: "Universiti Malaya",
-      },
-      {
-        id: "log3",
-        name: "[Name Placeholder]",
-        role: "Catering & Facilities Officer",
-        institution: "Universiti Malaya",
-      },
-    ],
-  },
+  // {
+  //   id: "operations",
+  //   title: "Operations Team",
+  //   members: [
+  //     {
+  //       id: "op1",
+  //       name: "[Name Placeholder]",
+  //       role: "Operations Manager",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "op2",
+  //       name: "[Name Placeholder]",
+  //       role: "Venue Coordinator",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "op3",
+  //       name: "[Name Placeholder]",
+  //       role: "Registration Officer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "publicity",
+  //   title: "Publicity Team",
+  //   members: [
+  //     {
+  //       id: "pub1",
+  //       name: "[Name Placeholder]",
+  //       role: "Publicity Chair",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "pub2",
+  //       name: "[Name Placeholder]",
+  //       role: "Social Media Officer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "pub3",
+  //       name: "[Name Placeholder]",
+  //       role: "Graphic Designer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "technical",
+  //   title: "Technical Team",
+  //   members: [
+  //     {
+  //       id: "tech1",
+  //       name: "[Name Placeholder]",
+  //       role: "Technical Chair",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "tech2",
+  //       name: "[Name Placeholder]",
+  //       role: "AV & Equipment Officer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "tech3",
+  //       name: "[Name Placeholder]",
+  //       role: "IT Support Specialist",
+  //       institution: "Universiti Malaya",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "protocol",
+  //   title: "Protocol Team",
+  //   members: [
+  //     {
+  //       id: "prot1",
+  //       name: "[Name Placeholder]",
+  //       role: "Protocol Chair",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "prot2",
+  //       name: "[Name Placeholder]",
+  //       role: "Guest Relations Officer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "prot3",
+  //       name: "[Name Placeholder]",
+  //       role: "Ushering Coordinator",
+  //       institution: "Universiti Malaya",
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: "logistics",
+  //   title: "Logistics Team",
+  //   members: [
+  //     {
+  //       id: "log1",
+  //       name: "[Name Placeholder]",
+  //       role: "Logistics Chair",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "log2",
+  //       name: "[Name Placeholder]",
+  //       role: "Transportation Coordinator",
+  //       institution: "Universiti Malaya",
+  //     },
+  //     {
+  //       id: "log3",
+  //       name: "[Name Placeholder]",
+  //       role: "Catering & Facilities Officer",
+  //       institution: "Universiti Malaya",
+  //     },
+  //   ],
+  // },
 ];
 
 // ─── Sponsors ─────────────────────────────────────────────────────────────────

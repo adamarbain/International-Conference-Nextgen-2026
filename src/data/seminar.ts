@@ -676,6 +676,13 @@ export const committeeGroups: CommitteeGroup[] = [
         institution: "Universiti Malaya",
         image: "/Yusniza.png",
       },
+      {
+        id: "p3",
+        name: "Dr. Goh Jin Yu",
+        role: "Colnet International",
+        institution: "Colnet International",
+        image: "/goh-jin-yu.jpg",
+      },
     ],
   },
   {
@@ -952,6 +959,14 @@ export const registrationTiers: RegistrationTier[] = [
     intlFee: "RM 1200 / person",
     description:
       "Minimum 3 participants from the same institution. 10% group discount applied.",
+  },
+  {
+    id: "attendee",
+    name: "Attendee (Non-presenting)",
+    localFee: "RM485",
+    intlFee: "RM485",
+    description:
+      "For participants who wish to attend the conference without presenting a paper. Access to all sessions and materials included.",
   },
 ];
 

@@ -113,22 +113,6 @@ export default function RegistrationPage() {
               </tbody>
             </table>
           </motion.div>
-
-          {/* <motion.div
-            variants={prefersReducedMotion ? {} : fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-5 flex items-start gap-2 bg-amber-50 rounded-xl p-4 border border-amber-200"
-          >
-            <AlertCircle size={16} className="text-amber-600 shrink-0 mt-0.5" />
-            <p className="text-xs text-amber-800">
-              <strong>Early Bird Discount:</strong> A RM400 early bird discount is
-              available for all registrations completed before 14 June 2026. Fees
-              shown above are standard rates. Presenting authors must be
-              registered to have their paper included in the proceedings.
-            </p>
-          </motion.div> */}
         </div>
       </section>
 

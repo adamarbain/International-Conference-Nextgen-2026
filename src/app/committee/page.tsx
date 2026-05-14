@@ -191,7 +191,7 @@ export default function CommitteePage() {
               organizing team, please reach out to the secretariat.
             </p>
             <a
-              href="mailto:ainuddin@um.edu.my"
+              href="mailto:icgsbt@um.edu.my"
               className="inline-flex items-center gap-2 bg-gold text-navy-dark font-bold px-7 py-3 rounded-xl hover:bg-gold-light transition-colors"
             >
               Contact the Secretariat

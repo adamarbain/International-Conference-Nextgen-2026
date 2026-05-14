@@ -944,14 +944,14 @@ export const registrationTiers: RegistrationTier[] = [
     description:
       "Professionals from the corporate, government, and non-profit sectors",
   },
-  {
-    id: "group",
-    name: "Group Registration (3+ persons)",
-    localFee: "RM 800 / person",
-    intlFee: "RM 1200 / person",
-    description:
-      "Minimum 3 participants from the same institution. 10% group discount applied.",
-  },
+  // {
+  //   id: "group",
+  //   name: "Group Registration (3+ persons)",
+  //   localFee: "RM 800 / person",
+  //   intlFee: "RM 1200 / person",
+  //   description:
+  //     "Minimum 3 participants from the same institution. 10% group discount applied.",
+  // },
   {
     id: "attendee",
     name: "Attendee (Non-presenting)",

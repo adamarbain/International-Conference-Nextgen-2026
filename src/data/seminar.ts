@@ -929,16 +929,8 @@ export const sponsorshipPackages: SponsorshipPackage[] = [
 
 export const registrationTiers: RegistrationTier[] = [
   {
-    id: "student",
-    name: "Student",
-    localFee: "RM 800",
-    intlFee: "RM 1200",
-    description:
-      "Enrolled undergraduate or postgraduate students with valid student ID",
-  },
-  {
     id: "academic",
-    name: "Academic / Researcher",
+    name: "Academic / Researcher / Student",
     localFee: "RM 800",
     intlFee: "RM 1200",
     description:
@@ -947,8 +939,8 @@ export const registrationTiers: RegistrationTier[] = [
   {
     id: "industry",
     name: "Industry Professional",
-    localFee: "RM 800",
-    intlFee: "RM 1200",
+    localFee: "RM 1000",
+    intlFee: "RM 1500",
     description:
       "Professionals from the corporate, government, and non-profit sectors",
   },
@@ -963,8 +955,8 @@ export const registrationTiers: RegistrationTier[] = [
   {
     id: "attendee",
     name: "Attendee (Non-presenting)",
-    localFee: "RM485",
-    intlFee: "RM485",
+    localFee: "RM600",
+    intlFee: "RM800",
     description:
       "For participants who wish to attend the conference without presenting a paper. Access to all sessions and materials included.",
   },

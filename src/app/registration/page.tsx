@@ -15,7 +15,7 @@ import {
 const inclusions = [
   "Access to all keynote addresses and parallel sessions",
   "Official conference proceedings (digital)",
-  "Welcome reception and networking lunch",
+  // "Welcome reception and networking lunch",
   "Lunch and refreshments on both conference days",
   "Certificate of participation (digital)",
   "Conference kit and name badge",

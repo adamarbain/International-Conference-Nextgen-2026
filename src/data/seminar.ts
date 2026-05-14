@@ -679,7 +679,7 @@ export const committeeGroups: CommitteeGroup[] = [
       {
         id: "p3",
         name: "Dr. Goh Jin Yu",
-        role: "Colnet International",
+        role: "Executive Director, Colnet International",
         institution: "Colnet International",
         image: "/goh-jin-yu.jpg",
       },

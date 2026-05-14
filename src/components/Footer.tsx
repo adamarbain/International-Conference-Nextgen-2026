@@ -84,7 +84,7 @@ export default function Footer() {
                 <span>{seminarInfo.address}</span>
               </li>
             </ul>
-            <div className="mt-5 pt-4 border-t border-navy-light">
+            {/* <div className="mt-5 pt-4 border-t border-navy-light">
               <p className="text-xs text-blue-300 leading-relaxed">
                 Organised by{" "}
                 <span className="text-white font-medium">
@@ -95,7 +95,7 @@ export default function Footer() {
                   {seminarInfo.organiserFaculties[1]}
                 </span>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

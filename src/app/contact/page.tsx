@@ -85,7 +85,7 @@ export default function ContactPage() {
           </motion.div>
 
           {/* ── Organiser Info ─────────────────────────────────────────── */}
-          <motion.div
+          {/* <motion.div
             variants={prefersReducedMotion ? {} : fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* ── Contact Form ───────────────────────────────────────────── */}
           <div className="max-w-3xl mx-auto">

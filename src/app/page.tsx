@@ -109,6 +109,17 @@ export default function HomePage() {
               organisations, economies, and communities.
             </motion.p>
 
+            {/* Add text Supporting Journal : Malaysian Journal of Computer Science (ISSN 0127-9084) */}
+              <motion.p
+                variants={prefersReducedMotion ? {} : fadeUp}
+                initial="hidden"
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+                className="text-blue-300 text-base mb-8 max-w-2xl leading-relaxed"
+              >
+                Supporting Journal: <span className="font-semibold text-white">Malaysian Journal of Computer Science (ISSN 0127-9084)</span>
+              </motion.p>
+
             {/* CTA Buttons */}
             <motion.div
               initial={prefersReducedMotion ? false : { opacity: 0 }}

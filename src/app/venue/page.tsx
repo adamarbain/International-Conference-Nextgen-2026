@@ -349,10 +349,10 @@ export default function VenuePage() {
                     can be provided upon request to registered participants.
                     Please contact the secretariat at{" "}
                     <a
-                      href="mailto:icgsbt@um.edu.my"
+                      href="mailto:icgsbt@fsktm.um.edu.my"
                       className="text-gold hover:underline"
                     >
-                      {seminarInfo.email ?? "icgsbt@um.edu.my"}
+                      {seminarInfo.email ?? "icgsbt@fsktm.um.edu.my"}
                     </a>{" "}
                     with your full name, passport number, and registration
                     confirmation.

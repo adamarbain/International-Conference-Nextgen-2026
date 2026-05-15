@@ -152,7 +152,7 @@ export const seminarInfo: SeminarInfo = {
   country: "Malaysia",
   university: "Universiti Malaya",
   format: "Physical (In-person)",
-  email: "icgsbt@um.edu.my",
+  email: "icgsbt@fsktm.um.edu.my",
   address: "Universiti Malaya, 50603 Kuala Lumpur, Malaysia",
   organiserFaculties: [
     "Faculty of Computer Science & IT",
@@ -594,7 +594,7 @@ export const faqItems: FAQItem[] = [
     id: "faq-7",
     question: "Is there a virtual attendance option?",
     answer:
-      "The conference is primarily an in-person event at Universiti Malaya. We are exploring hybrid options for international participants unable to travel. Please contact us at icgsbt@um.edu.my for the latest updates on virtual attendance availability.",
+      "The conference is primarily an in-person event at Universiti Malaya. We are exploring hybrid options for international participants unable to travel. Please contact us at icgsbt@fsktm.um.edu.my for the latest updates on virtual attendance availability.",
     category: "attendance",
   },
   {

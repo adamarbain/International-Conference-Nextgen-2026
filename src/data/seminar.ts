@@ -260,22 +260,22 @@ export const tracks: Track[] = [
 // ─── Important Dates ──────────────────────────────────────────────────────────
 
 export const importantDates: ImportantDate[] = [
-  {
-    id: "abstract-deadline",
-    label: "Abstract Submission Deadline",
-    date: "15 March 2026",
-    description:
-      "Submit your abstract (250–350 words) via the online submission portal.",
-    status: "past",
-  },
-  {
-    id: "acceptance-notification",
-    label: "Acceptance Notification",
-    date: "30 April 2026",
-    description:
-      "Authors will be notified of abstract acceptance/rejection via email.",
-    status: "past",
-  },
+  // {
+  //   id: "abstract-deadline",
+  //   label: "Abstract Submission Deadline",
+  //   date: "15 March 2026",
+  //   description:
+  //     "Submit your abstract (250–350 words) via the online submission portal.",
+  //   status: "past",
+  // },
+  // {
+  //   id: "acceptance-notification",
+  //   label: "Acceptance Notification",
+  //   date: "30 April 2026",
+  //   description:
+  //     "Authors will be notified of abstract acceptance/rejection via email.",
+  //   status: "past",
+  // },
   {
     id: "full-paper-deadline",
     label: "Full Paper Submission Deadline",
@@ -576,13 +576,13 @@ export const faqItems: FAQItem[] = [
       "Papers should be submitted in PDF or Microsoft Word format, following the official proceedings template available on the Call for Papers page. The maximum length is 8 pages including references, figures, and tables. All submissions must be in English.",
     category: "submission",
   },
-  {
-    id: "faq-5",
-    question: "What is the abstract submission deadline?",
-    answer:
-      "The abstract submission deadline is 15 March 2026. Abstracts should be 250–350 words and submitted through the online portal. Authors will receive acceptance/rejection notifications by 30 April 2026.",
-    category: "submission",
-  },
+  // {
+  //   id: "faq-5",
+  //   question: "What is the abstract submission deadline?",
+  //   answer:
+  //     "The abstract submission deadline is 15 March 2026. Abstracts should be 250–350 words and submitted through the online portal. Authors will receive acceptance/rejection notifications by 30 April 2026.",
+  //   category: "submission",
+  // },
   {
     id: "faq-6",
     question: "How are submitted papers reviewed?",

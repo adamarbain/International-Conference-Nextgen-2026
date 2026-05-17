@@ -133,12 +133,12 @@ export default function HomePage() {
               >
                 Register Now <ArrowRight size={17} />
               </Link>
-              <Link
+              {/* <Link
                 href="/call-for-papers"
                 className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-7 py-3.5 rounded-xl transition-colors"
               >
                 Submit Abstract <FileText size={17} />
-              </Link>
+              </Link> */}
             </motion.div>
 
             {/* Countdown */}

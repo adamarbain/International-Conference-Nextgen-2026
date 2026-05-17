@@ -32,7 +32,7 @@ const submissionGuidelines = [
     id: "length",
     title: "Page Limit",
     value: "6–8 pages",
-    desc: "Full papers should be 6–8 pages (including references, figures, and tables). Extended abstracts: 2–4 pages.",
+    desc: "Full papers should be 6–8 pages (including references, figures, and tables).",
   },
   {
     id: "format",
@@ -73,7 +73,7 @@ export default function CallForPapersPage() {
       <Navbar />
       <PageHero
         title="Call for Papers"
-        subtitle="We invite original research papers, case studies, and extended abstracts from scholars worldwide"
+        subtitle="We invite original research papers and case studies from scholars worldwide"
         badge="Submissions Open"
       />
 

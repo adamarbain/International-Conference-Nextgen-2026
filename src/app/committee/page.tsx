@@ -2,7 +2,6 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { User, Crown, Shield } from "lucide-react";
-import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
@@ -80,21 +79,11 @@ export default function CommitteePage() {
                           : "bg-gray-50 border-gray-200"
                       }`}
                     >
-                      <div className="w-24 h-24 rounded-full overflow-hidden bg-navy/10 border border-white/60 mb-4 mx-auto">
-                        {member.image ? (
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={96}
-                            height={96}
-                            className="w-full h-full object-cover"
-                          />
-                        ) : (
-                          <div className="w-full h-full bg-navy flex items-center justify-center">
-                            <User size={18} className="text-white" />
-                          </div>
-                        )}
-                      </div>
+                      {/* <div className="w-24 h-24 rounded-full overflow-hidden bg-navy/10 border border-white/60 mb-4 mx-auto">
+                        <div className="w-full h-full bg-navy flex items-center justify-center">
+                          <User size={18} className="text-white" />
+                        </div>
+                      </div> */}
                       <p className="text-navy font-bold text-sm leading-tight mb-1">
                         {member.name}
                       </p>

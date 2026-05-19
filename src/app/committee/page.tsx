@@ -23,6 +23,7 @@ export default function CommitteePage() {
   const subGroups = committeeGroups.filter(
     (g) => !specialRoles.includes(g.id)
   );
+  const allSubMembers = subGroups.flatMap((g) => g.members);
 
   return (
     <motion.div
@@ -125,39 +126,36 @@ export default function CommitteePage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 xl:grid-cols-3 gap-6"
+            className="max-w-3xl mx-auto"
           >
-            {subGroups.map((group) => (
-              <motion.div
-                key={group.id}
-                variants={prefersReducedMotion ? {} : fadeUp}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
-              >
-                <div className="bg-navy px-5 py-4">
-                  <h3 className="text-white font-bold text-base">
-                    {group.title}
-                  </h3>
-                </div>
-                <div className="p-4 space-y-3">
-                  {group.members.map((member) => (
-                    <div
-                      key={member.id}
-                      className="flex items-center gap-3 p-3 rounded-lg bg-gray-50"
-                    >
-                      <div className="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0">
-                        <User size={15} className="text-navy" />
-                      </div>
-                      <div>
-                        <p className="text-sm font-semibold text-navy leading-tight">
-                          {member.name}
-                        </p>
-                        <p className="text-xs text-gray-500">{member.role}</p>
-                      </div>
+            <motion.div
+              variants={prefersReducedMotion ? {} : fadeUp}
+              className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
+            >
+              <div className="p-4 space-y-3">
+                {allSubMembers.map((member) => (
+                  <div
+                    key={member.id}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-50"
+                  >
+                    <div className="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0">
+                      <User size={15} className="text-navy" />
                     </div>
-                  ))}
-                </div>
-              </motion.div>
-            ))}
+                    <div>
+                      <p className="text-sm font-semibold text-navy leading-tight">
+                        {member.name}
+                      </p>
+                      <p className="text-xs text-gray-500">{member.role}</p>
+                      {member.institution && (
+                        <p className="text-xs text-gray-400 mt-0.5">
+                          {member.institution}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>

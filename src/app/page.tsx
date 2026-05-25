@@ -109,7 +109,6 @@ export default function HomePage() {
               organisations, economies, and communities.
             </motion.p>
 
-            {/* Add text Supporting Journal : Malaysian Journal of Computer Science (ISSN 0127-9084) */}
               <motion.p
                 variants={prefersReducedMotion ? {} : fadeUp}
                 initial="hidden"
@@ -117,7 +116,10 @@ export default function HomePage() {
                 transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
                 className="text-blue-300 text-base mb-8 max-w-2xl leading-relaxed"
               >
-                Supporting Journal: <span className="font-semibold text-white">Malaysian Journal of Computer Science (ISSN 0127-9084)</span>
+                Supporting Journals:
+                <span className="font-semibold text-white block mt-1">1. Malaysian Journal of Computer Science ( ISSN: 0127-9084 )</span>
+                <span className="font-semibold text-white block">2. Chinese Management Studies ( ISSN: 1750-614X / eISSN: 1750-6158 )</span>
+                <span className="font-semibold text-white block">3. Platform: A Journal of Management and Humanities ( eISSN: 2637-0859 )</span>
               </motion.p>
 
             {/* CTA Buttons */}

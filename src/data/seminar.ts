@@ -110,6 +110,7 @@ export interface RegistrationTier {
   localFee: string;
   intlFee: string;
   description: string;
+  promo?: string;
 }
 
 export interface Hotel {
@@ -279,17 +280,9 @@ export const importantDates: ImportantDate[] = [
   {
     id: "full-paper-deadline",
     label: "Full Paper Submission Deadline",
-    date: "31 May 2026",
-    description:
-      "Submit your complete paper in PDF/Word format following the proceedings template.",
-    status: "upcoming",
-  },
-  {
-    id: "camera-ready",
-    label: "Camera-Ready Paper Deadline",
     date: "15 June 2026",
     description:
-      "Final revised papers incorporating all reviewer feedback must be submitted.",
+      "Submit your complete paper in PDF/Word format following the proceedings template.",
     status: "upcoming",
   },
   {
@@ -960,11 +953,20 @@ export const sponsorshipPackages: SponsorshipPackage[] = [
 export const registrationTiers: RegistrationTier[] = [
   {
     id: "academic",
-    name: "Academic / Researcher / Student",
+    name: "Academic / Researcher",
     localFee: "RM 800",
     intlFee: "RM 1200",
     description:
       "Academics, lecturers, researchers, and postdoctoral fellows",
+  },
+  {
+    id: "student",
+    name: "Student",
+    localFee: "RM 800",
+    intlFee: "RM 1200",
+    description:
+      "Currently enrolled undergraduate or postgraduate students (valid student ID required)",
+    promo: "1+1 — Register 2 students for the price of 1",
   },
   {
     id: "industry",

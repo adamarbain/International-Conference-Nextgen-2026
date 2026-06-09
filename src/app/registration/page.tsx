@@ -58,6 +58,9 @@ export default function RegistrationPage() {
             <p className="mt-3 text-gray-500">
               Early bird rates apply for registrations made before 14 June 2026
             </p>
+            <p className="mt-2 inline-flex items-center gap-2 rounded-full bg-gold/15 px-4 py-1.5 text-sm font-semibold text-navy">
+              Student special: 1+1 promo — register 2 students for the price of 1
+            </p>
           </motion.div>
 
           <motion.div
@@ -87,16 +90,32 @@ export default function RegistrationPage() {
                     key={tier.id}
                     variants={prefersReducedMotion ? {} : fadeUp}
                     className={`border-t border-gray-100 ${
-                      tier.id === "group" ? "bg-gold/5" : i % 2 === 0 ? "bg-white" : "bg-gray-50"
+                      tier.promo || tier.id === "group"
+                        ? "bg-gold/5"
+                        : i % 2 === 0
+                          ? "bg-white"
+                          : "bg-gray-50"
                     }`}
                   >
                     <td className="px-6 py-4">
-                      <p className="font-semibold text-navy text-sm">
-                        {tier.name}
-                      </p>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <p className="font-semibold text-navy text-sm">
+                          {tier.name}
+                        </p>
+                        {tier.promo && (
+                          <span className="inline-flex rounded-full bg-gold px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-navy-dark">
+                            Promo
+                          </span>
+                        )}
+                      </div>
                       <p className="text-xs text-gray-500 mt-0.5">
                         {tier.description}
                       </p>
+                      {tier.promo && (
+                        <p className="text-xs font-semibold text-gold mt-1.5">
+                          {tier.promo}
+                        </p>
+                      )}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <span className="text-lg font-bold text-navy">
@@ -258,6 +277,7 @@ export default function RegistrationPage() {
                 "Presenting authors must register at the Full Author rate or above — student registration does not cover paper presentation for non-student papers.",
                 "Cancellations before 1 June 2026: 70% refund. Between 1–30 June 2026: 30% refund. No refunds after 30 June 2026.",
                 "Substitutions (name changes) are accepted at any time at no charge with written notice to the secretariat.",
+                "Student 1+1 promo: register 2 students together and pay for only 1 registration fee. Both participants must submit valid student ID upon registration.",
                 "Group discounts apply for 3 or more participants from the same institution registering together.",
                 "For payment via bank transfer, proof of payment must be uploaded within 5 working days to confirm your registration.",
                 "For queries, contact the secretariat at " +

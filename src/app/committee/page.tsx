@@ -103,7 +103,7 @@ export default function CommitteePage() {
         </div>
       </section>
 
-      {/* ── Sub-committees ─────────────────────────────────────────────── */}
+            {/* ── Sub-committees ─────────────────────────────────────────────── */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -126,36 +126,47 @@ export default function CommitteePage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto"
+            className="max-w-5xl mx-auto space-y-8"
           >
-            <motion.div
-              variants={prefersReducedMotion ? {} : fadeUp}
-              className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
-            >
-              <div className="p-4 space-y-3">
-                {allSubMembers.map((member) => (
-                  <div
-                    key={member.id}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-gray-50"
-                  >
-                    <div className="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0">
-                      <User size={15} className="text-navy" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-semibold text-navy leading-tight">
-                        {member.name}
-                      </p>
-                      <p className="text-xs text-gray-500">{member.role}</p>
-                      {member.institution && (
-                        <p className="text-xs text-gray-400 mt-0.5">
-                          {member.institution}
+            {subGroups.map((group) => (
+              <motion.div
+                key={group.id}
+                variants={prefersReducedMotion ? {} : fadeUp}
+                className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100"
+              >
+                {/* Group header */}
+                <div className="px-5 py-3 bg-navy/5 border-b border-gray-100">
+                  <h3 className="text-sm font-extrabold text-navy uppercase tracking-wide">
+                    {group.title}
+                  </h3>
+                </div>
+
+                {/* Members grid */}
+                <div className="p-4 grid sm:grid-cols-2 gap-3">
+                  {group.members.map((member) => (
+                    <div
+                      key={member.id}
+                      className="flex items-center gap-3 p-3 rounded-lg bg-gray-50"
+                    >
+                      <div className="w-9 h-9 rounded-full bg-navy/10 flex items-center justify-center shrink-0">
+                        <User size={15} className="text-navy" />
+                      </div>
+                      <div>
+                        <p className="text-sm font-semibold text-navy leading-tight">
+                          {member.name}
                         </p>
-                      )}
+                        <p className="text-xs text-gray-500">{member.role}</p>
+                        {member.institution && (
+                          <p className="text-xs text-gray-400 mt-0.5">
+                            {member.institution}
+                          </p>
+                        )}
+                      </div>
                     </div>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       </section>

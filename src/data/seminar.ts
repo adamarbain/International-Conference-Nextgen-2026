@@ -710,7 +710,7 @@ export const committeeGroups: CommitteeGroup[] = [
     members: [
       {
         id: "ac1",
-        name: "Faziah binti Othman",
+        name: "Fazidah binti Othman",
         role: "Head of Promotion Committee",
         institution: "Universiti Malaya",
       },

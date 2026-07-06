@@ -171,11 +171,11 @@ export const speakers: Speaker[] = [
     role: "Keynote Speaker 1",
     institution: "Faculty of Business and Economics",
     keynoteNumber: 1,
-    bio: "Dr. Noor Ismawati Jaafar is a Professor in Information Systems at the Department of Decision Science, Faculty of Business and Economics.",
+    bio: "Prof. Dr. Noor Ismawati Jaafar is a Professor in Information Systems at the Department of Decision Science, Faculty of Business and Economics.",
     topic: "To be announced",
     initials: "NI",
     color: "#1a2e5a",
-    image: "/ismawati.png",
+    image: "/ismawati.jpg",
   },
   {
     id: "speaker-2",

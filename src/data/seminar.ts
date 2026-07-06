@@ -166,7 +166,7 @@ export const seminarInfo: SeminarInfo = {
 export const speakers: Speaker[] = [
   {
     id: "speaker-1",
-    name: "Prof. Dr. Yusniza binti Kamarulzaman",
+    name: "Prof. Dr. Yusniza Binti Kamarulzaman",
     title: "Professor",
     role: "Keynote Speaker 1",
     institution: "Universiti Malaya",

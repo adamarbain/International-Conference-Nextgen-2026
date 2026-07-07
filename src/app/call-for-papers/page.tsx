@@ -166,9 +166,6 @@ export default function CallForPapersPage() {
                   className={`rounded-2xl overflow-hidden border ${colors[i]}`}
                 >
                   <div className={`${headerColors[i]} text-white p-5`}>
-                    <span className="text-xs font-bold uppercase tracking-wider opacity-80">
-                      Track {track.number}
-                    </span>
                     <h3 className="font-bold text-base mt-1 leading-tight">
                       {track.title}
                     </h3>
@@ -255,23 +252,32 @@ export default function CallForPapersPage() {
                   Author Resources
                 </p>
                 <h3 className="text-navy font-bold text-xl mb-2">
-                  Example Paper Template
+                  ICGSBT Paper Template
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-5">
-                  Download and use the official LaTeX template to format your
-                  manuscript before submission.
-                </p>
                 <a
-                  href="/ICGSBT%20LaTeX%20Template.pdf"
+                  href="/conference-template-a4.docx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-navy text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-navy-light transition-colors"
                 >
                   <Download size={16} />
-                  Download LaTeX Template (PDF)
+                  Download Word Template (DOCX)
                 </a>
               </div>
             </div>
+          </motion.div>
+
+          <motion.div
+            variants={prefersReducedMotion ? {} : fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="mt-6 bg-blue-50 rounded-2xl p-8 border border-blue-100"
+          >
+            <p className="text-sm leading-relaxed text-gray-700">
+              In alignment with our theme on NextGen IT, ICGSBT 2026 utilises AI tools across various aspects of our reviewing and
+              publishing process to improve efficiency, with human oversight remaining central to all editorial decisions.
+            </p>
           </motion.div>
         </div>
       </section>

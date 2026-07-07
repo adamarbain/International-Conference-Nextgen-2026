@@ -157,19 +157,6 @@ export default function ProgrammePage() {
             </div>
           </motion.div>
 
-          {/* Download PDF */}
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-8 flex justify-center"
-          >
-            <button className="inline-flex items-center gap-2 bg-navy text-white font-semibold px-7 py-3.5 rounded-xl hover:bg-navy-light transition-colors shadow-sm">
-              <Download size={17} />
-              Download Full Programme (PDF)
-            </button>
-          </motion.div>
         </div>
       </section>
 

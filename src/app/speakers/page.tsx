@@ -55,7 +55,7 @@ export default function SpeakersPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8"
+            className="grid md:grid-cols-2 gap-8"
           >
             {speakers.map((speaker) => (
               <SpeakerCard key={speaker.id} speaker={speaker} large />
@@ -77,7 +77,7 @@ export default function SpeakersPage() {
             {[
               {
                 label: "Duration",
-                value: "45–60 minutes",
+                value: "30 minutes",
                 desc: "Each keynote includes a dedicated Q&A session",
               },
               {

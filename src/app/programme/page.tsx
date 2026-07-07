@@ -108,14 +108,6 @@ export default function ProgrammePage() {
                   items={day2Schedule}
                   //parallelSessions={[...parallelSession2, ...parallelSession3]}
                 />
-                <div className="mt-6 bg-blue-50 rounded-xl p-4 border border-blue-100">
-                  <p className="text-xs text-blue-700 font-medium">
-                    <strong>Note:</strong> The parallel session table above
-                    shows Session 2 (9:00–12:30) rows first, followed by
-                    Session 3 (14:00–16:00) rows. A break is taken from 1:00pm
-                    to 2:00pm between the two sessions.
-                  </p>
-                </div>
               </motion.div>
             )}
           </AnimatePresence>

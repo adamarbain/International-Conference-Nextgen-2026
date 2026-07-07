@@ -211,28 +211,12 @@ export default function RegistrationPage() {
               <motion.div
                 key={i}
                 variants={prefersReducedMotion ? {} : fadeUp}
-                className="flex items-start gap-3 bg-white rounded-xl px-5 py-4 border border-gray-100 shadow-sm"
+                className="flex items-start gap-3 bg-navy rounded-xl px-5 py-4 border border-navy/10 shadow-sm"
               >
-                <Check size={16} className="text-emerald-600 shrink-0 mt-0.5" />
-                <p className="text-sm text-gray-700">{item}</p>
+                <Check size={16} className="text-gold shrink-0 mt-0.5" />
+                <p className="text-sm text-white">{item}</p>
               </motion.div>
             ))}
-          </motion.div>
-
-          <motion.div
-            variants={prefersReducedMotion ? {} : fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            className="mt-6 bg-navy rounded-2xl p-6 text-white text-center"
-          >
-            <Package size={28} className="text-gold mx-auto mb-3" />
-            <p className="font-semibold mb-1">Conference Kit</p>
-            <p className="text-blue-200 text-sm">
-              All participants receive a premium conference kit including the
-              programme booklet, note-taking materials, and exclusive conference
-              memorabilia.
-            </p>
           </motion.div>
         </div>
       </section>

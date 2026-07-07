@@ -68,7 +68,7 @@ export default function CommitteePage() {
                     {group.title}
                   </h2>
                 </div>
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-4">
                   {group.members.map((member) => (
                     <div
                       key={member.id}

@@ -79,14 +79,11 @@ export default function ProgrammePage() {
                     <h2 className="font-bold text-navy text-lg">
                       Day 1 — Monday, 14 July 2026
                     </h2>
-                    <p className="text-xs text-gray-500">
-                      Opening Ceremony, Keynote Addresses & Parallel Session 1
-                    </p>
                   </div>
                 </div>
                 <DaySchedule
                   items={day1Schedule}
-                  parallelSessions={parallelSession1}
+                  //parallelSessions={parallelSession1}
                 />
               </motion.div>
             ) : (
@@ -105,15 +102,11 @@ export default function ProgrammePage() {
                     <h2 className="font-bold text-navy text-lg">
                       Day 2 — Tuesday, 15 July 2026
                     </h2>
-                    <p className="text-xs text-gray-500">
-                      Parallel Sessions 2 & 3, Closing Ceremony & Best Paper
-                      Award
-                    </p>
                   </div>
                 </div>
                 <DaySchedule
                   items={day2Schedule}
-                  parallelSessions={[...parallelSession2, ...parallelSession3]}
+                  //parallelSessions={[...parallelSession2, ...parallelSession3]}
                 />
                 <div className="mt-6 bg-blue-50 rounded-xl p-4 border border-blue-100">
                   <p className="text-xs text-blue-700 font-medium">

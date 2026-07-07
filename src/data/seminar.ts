@@ -311,54 +311,78 @@ export const importantDates: ImportantDate[] = [
 // ─── Schedule ─────────────────────────────────────────────────────────────────
 
 export const day1Schedule: ScheduleItem[] = [
-  { time: "9:00am – 9:15am", title: "Opening Ceremony", type: "ceremony" },
+  { time: "9:00am – 9:30am", title: "Registration", type: "ceremony" },
   {
-    time: "9:15am – 10:00am",
-    title: "Keynote Address 1",
-    speaker: "Prof. Dr. Yusniza binti Kamarulzaman",
+    time: "9:30am – 10:00am",
+    title: "Opening Ceremony",
+    speaker:
+      "Dean, Faculty of Computer Science and Information Technology; Dean, Faculty of Business and Economy",
+    type: "ceremony",
+  },
+  {
+    time: "10:00am – 10:30am",
+    title: "Keynote Speaker 1",
+    speaker: "Professor Dr. Ismawati",
     type: "keynote",
   },
   {
-    time: "10:00am – 10:15am",
-    title: "Coffee Break & Networking",
+    time: "10:30am – 11:00am",
+    title: "Keynote Speaker 2",
+    speaker: "Professor Ts. Dr. Badrul Anuar bin Juma’at",
+    type: "keynote",
+  },
+  {
+    time: "11:00am – 11:30am",
+    title: "Tea Break",
     type: "break",
   },
   {
-    time: "10:15am – 11:00am",
-    title: "Keynote Address 2",
-    speaker: "Datuk Lee Cheun Wei",
-    type: "keynote",
-  },
-  {
-    time: "11:00am – 12:00pm",
-    title: "Keynote Address 3",
-    speaker: "Assoc. Prof. Dr. Norisma Idris",
-    type: "keynote",
-  },
-  { time: "12:00pm – 2:00pm", title: "Lunch Break", type: "break" },
-  {
-    time: "2:00pm – 4:00pm",
-    title: "Parallel Session 1 (3 Tracks)",
-    type: "parallel",
-  },
-];
-
-export const day2Schedule: ScheduleItem[] = [
-  {
-    time: "9:00am – 1:00pm",
-    title: "Parallel Session 2 (3 Tracks — 14 Papers)",
+    time: "11:30am – 1:00pm",
+    title: "Presentation Session 1 (6 Papers)",
     type: "parallel",
   },
   { time: "1:00pm – 2:00pm", title: "Lunch Break", type: "break" },
   {
     time: "2:00pm – 4:00pm",
-    title: "Parallel Session 3 (3 Tracks — 8 Papers)",
+    title: "Presentation Session 2 (8 Papers)",
     type: "parallel",
   },
   {
     time: "4:00pm – 4:30pm",
-    title: "Closing Ceremony & Best Paper Award",
+    title: "Tea Break and End",
     type: "closing",
+  },
+];
+
+export const day2Schedule: ScheduleItem[] = [
+  { time: "9:00am – 9:30am", title: "Registration", type: "ceremony" },
+  {
+    time: "9:30am – 10:00am",
+    title: "Keynote Speaker 3",
+    speaker: "Professor Dr. Yusniza binti Kamarulzaman",
+    type: "keynote",
+  },
+  {
+    time: "10:00am – 10:30am",
+    title: "Keynote Speaker 4",
+    speaker: "Datuk Lee Cheun Wei",
+    type: "keynote",
+  },
+  {
+    time: "10:30am – 11:00am",
+    title: "Tea Break",
+    type: "break",
+  },
+  {
+    time: "11:00am – 1:00pm",
+    title: "Parallel Session 1 (5 Papers)",
+    type: "parallel",
+  },
+  { time: "1:00pm – 2:00pm", title: "Lunch Break", type: "break" },
+  {
+    time: "2:00pm – 4:00pm",
+    title: "Parallel Session 2 (5 Papers)",
+    type: "parallel",
   },
 ];
 

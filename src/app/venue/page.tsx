@@ -57,95 +57,7 @@ export default function VenuePage() {
                 viewport={{ once: true }}
               >
                 <p className="text-xs font-bold text-gold uppercase tracking-widest mb-3">
-                  Day 1 Venue
-                </p>
-                <h2 className="text-3xl font-extrabold text-navy mb-5">
-                  Faculty of Business & Economics, Universiti Malaya
-                </h2>
-                <div className="flex items-start gap-2 mb-5">
-                  <MapPin size={16} className="text-gold shrink-0 mt-1" />
-                  <p className="text-gray-600">
-                    Faculty of Business & Economics, Universiti Malaya, 50603 Kuala Lumpur, Malaysia
-                  </p>
-                </div>
-                <div className="space-y-4 text-gray-600 text-sm leading-relaxed">
-                  <p>
-                    Universiti Malaya (UM) is Malaysia&apos;s oldest and most prestigious university, consistently ranked among the top universities in Asia. The main campus is a verdant 309-hectare site nestled in the heart of Kuala Lumpur, offering world-class facilities for academic events.
-                  </p>
-                  <p>
-                    The conference will take place at the Faculty of Business & Economics, Universiti Malaya for Day 1. Detailed room and hall assignments will be provided in the final programme booklet distributed to all registered participants.
-                  </p>
-                </div>
-
-                <div className="mt-6 grid grid-cols-2 gap-3">
-                  {[
-                    { label: "Campus Size", value: "309 hectares" },
-                    { label: "Founded", value: "1949" },
-                    { label: "Distance from KLCC", value: "~8 km" },
-                    { label: "Nearest LRT", value: "Universiti (KJ13)" },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="bg-gray-50 rounded-xl p-4 border border-gray-100"
-                    >
-                      <p className="text-xs text-gray-400 mb-1">{item.label}</p>
-                      <p className="text-navy font-bold text-sm">{item.value}</p>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-
-              {/* Interactive Map */}
-              <motion.div
-                variants={prefersReducedMotion ? {} : fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-              >
-                <div className="rounded-2xl overflow-hidden border border-gray-200 bg-white h-80">
-                  <iframe
-                    title="Map to Faculty of Business & Economics, Universiti Malaya"
-                    src="https://www.google.com/maps?q=Faculty%20of%20Business%20%26%20Economics%2C%20Universiti%20Malaya&output=embed"
-                    className="w-full h-full"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                </div>
-
-                <div className="mt-4 flex flex-wrap items-center gap-3">
-                  <div className="bg-white rounded-lg px-4 py-2 border border-gray-200 text-xs text-navy font-medium flex items-center gap-2">
-                    <MapPin size={12} />
-                    3°7&apos;19&quot;N 101°39&apos;14&quot;E
-                  </div>
-                  <a
-                    href="https://maps.google.com/?q=Faculty+of+Business+%26+Economics,+Universiti+Malaya"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-navy hover:text-gold transition-colors"
-                  >
-                    Open in Google Maps <ExternalLink size={12} />
-                  </a>
-                </div>
-
-                <div className="mt-4 bg-blue-50 rounded-xl p-4 border border-blue-100 flex items-start gap-3">
-                  <Info size={15} className="text-blue-600 shrink-0 mt-0.5" />
-                  <p className="text-xs text-blue-700">
-                    Detailed venue maps, hall assignments, and campus navigation guides will be included in the final programme booklet sent to all registered participants.
-                  </p>
-                </div>
-              </motion.div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-              <motion.div
-                variants={prefersReducedMotion ? {} : fadeUp}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-              >
-                <p className="text-xs font-bold text-gold uppercase tracking-widest mb-3">
-                  Day 2 Venue
+                  Venue
                 </p>
                 <h2 className="text-3xl font-extrabold text-navy mb-5">
                   Faculty of Computer Science & Information Technology, Universiti Malaya
@@ -161,7 +73,7 @@ export default function VenuePage() {
                     Universiti Malaya (UM) is Malaysia&apos;s oldest and most prestigious university, consistently ranked among the top universities in Asia. The main campus is a verdant 309-hectare site nestled in the heart of Kuala Lumpur, offering world-class facilities for academic events.
                   </p>
                   <p>
-                    The conference will take place at the Faculty of Computer Science & Information Technology (FSKTM), Universiti Malaya for Day 2. Detailed room and hall assignments will be provided in the final programme booklet distributed to all registered participants.
+                    The conference will take place at the Faculty of Computer Science & Information Technology (FSKTM), Universiti Malaya. Detailed room and hall assignments will be provided in the final programme booklet distributed to all registered participants.
                   </p>
                 </div>
 

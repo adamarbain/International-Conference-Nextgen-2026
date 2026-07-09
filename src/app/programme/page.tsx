@@ -30,7 +30,7 @@ export default function ProgrammePage() {
       <Navbar />
       <PageHero
         title="Programme Schedule"
-        subtitle="14–15 July 2026 · Universiti Malaya, Kuala Lumpur"
+        subtitle="13–14 July 2026 · Universiti Malaya, Kuala Lumpur"
         badge="July 2026"
       />
 
@@ -56,7 +56,7 @@ export default function ProgrammePage() {
                 }`}
               >
                 <Calendar size={16} />
-                Day {day} — {day === 1 ? "14 July" : "15 July"}
+                Day {day} — {day === 1 ? "13 July" : "14 July"}
               </button>
             ))}
           </motion.div>
@@ -77,7 +77,7 @@ export default function ProgrammePage() {
                   </div>
                   <div>
                     <h2 className="font-bold text-navy text-lg">
-                      Day 1 — Monday, 14 July 2026
+                      Day 1 — Monday, 13 July 2026
                     </h2>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export default function ProgrammePage() {
                   </div>
                   <div>
                     <h2 className="font-bold text-navy text-lg">
-                      Day 2 — Tuesday, 15 July 2026
+                      Day 2 — Tuesday, 14 July 2026
                     </h2>
                   </div>
                 </div>

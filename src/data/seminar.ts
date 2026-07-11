@@ -166,7 +166,7 @@ export const seminarInfo: SeminarInfo = {
 export const speakers: Speaker[] = [
   {
     id: "speaker-1",
-    name: "Prof. Dr. Noor Ismawati Binti Jaafar",
+    name: "Prof. Dr. Noor Ismawati binti Jaafar",
     title: "Dean",
     role: "Keynote Speaker 1",
     institution: "Faculty of Business and Economics, UM",
@@ -322,7 +322,7 @@ export const day1Schedule: ScheduleItem[] = [
   {
     time: "10:00am – 10:30am",
     title: "Keynote Speaker 1",
-    speaker: "Professor Dr. Ismawati",
+    speaker: "Professor Dr. Noor Ismawati binti Jaafar",
     type: "keynote",
   },
   {
@@ -701,7 +701,7 @@ export const committeeGroups: CommitteeGroup[] = [
       },
       {
         id: "p2",
-        name: "Prof. Dr. Noor Ismawati Binti Jaafar",
+        name: "Prof. Dr. Noor Ismawati binti Jaafar",
         role: "Dean, Faculty of Business and Economics",
         institution: "Universiti Malaya",
         // image: "/goh-jin-yu.jpg",

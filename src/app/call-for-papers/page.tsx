@@ -74,7 +74,7 @@ export default function CallForPapersPage() {
       <PageHero
         title="Call for Papers"
         subtitle="We invite original research papers and case studies from scholars worldwide"
-        badge="Submissions Open"
+        badge="Submissions Closed"
       />
 
       {/* ── Introduction ───────────────────────────────────────────────── */}
@@ -402,15 +402,14 @@ export default function CallForPapersPage() {
               Use the online submission portal to upload your manuscript.
               Confirmation will be sent to your registered email address.
             </p>
-            <a
-              href="https://forms.gle/rBWtZcVBTFttbsSv6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-navy text-white font-bold px-8 py-4 rounded-xl hover:bg-navy-light transition-colors shadow-lg"
+            <button
+              type="button"
+              disabled
+              className="inline-flex items-center gap-2 bg-gray-400 text-gray-700 font-bold px-8 py-4 rounded-xl shadow-lg cursor-not-allowed opacity-70"
             >
               <FileText size={18} />
               Submit Your Paper <ArrowRight size={17} />
-            </a>
+            </button>
           </motion.div>
         </div>
       </section>

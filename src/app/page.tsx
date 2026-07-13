@@ -335,7 +335,7 @@ export default function HomePage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-6"
+            className="grid md:grid-cols-2 gap-8"
           >
             {speakers.map((speaker) => (
               <SpeakerCard key={speaker.id} speaker={speaker} />
@@ -432,26 +432,22 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-extrabold text-navy-dark mb-4">
-              Ready to Submit Your Research?
+              Programme Book Available
             </h2>
             <p className="text-navy/80 text-lg mb-8 max-w-2xl mx-auto">
-              Join researchers, academics, and industry experts from around the
-              world. Share your work and contribute to the global dialogue on
-              sustainable digital transformation.
+              Download the official conference programme book to explore the
+              full agenda, sessions, and event highlights.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/call-for-papers"
+              <a
+                href="/Programme_Book_ICGSBT2026.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-navy text-white font-bold px-8 py-4 rounded-xl hover:bg-navy-light transition-colors shadow-lg"
               >
-                Submit a Paper <ArrowRight size={18} />
-              </Link>
-              <Link
-                href="/registration"
-                className="inline-flex items-center gap-2 bg-white text-navy font-bold px-8 py-4 rounded-xl hover:bg-gray-50 transition-colors shadow-md"
-              >
-                Register to Attend
-              </Link>
+                <FileText size={18} />
+                Download Programme Book
+              </a>
             </div>
           </motion.div>
         </div>

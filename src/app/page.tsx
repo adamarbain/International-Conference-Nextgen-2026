@@ -440,7 +440,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="/Programme_Book_ICGSBT2026.pdf"
+                href="/Programme_Book_ICGSBT2026_updated.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-navy text-white font-bold px-8 py-4 rounded-xl hover:bg-navy-light transition-colors shadow-lg"

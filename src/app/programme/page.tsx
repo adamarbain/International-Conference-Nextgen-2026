@@ -2,18 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { Download, Calendar } from "lucide-react";
+import { FileText, Calendar } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageHero from "@/components/PageHero";
 import DaySchedule from "@/components/DaySchedule";
-import {
-  day1Schedule,
-  day2Schedule,
-  parallelSession1,
-  parallelSession2,
-  parallelSession3,
-} from "@/data/seminar";
+import { day1Schedule, day2Schedule } from "@/data/seminar";
 import { fadeUp, pageTransition } from "@/lib/animations";
 
 export default function ProgrammePage() {
@@ -33,6 +27,42 @@ export default function ProgrammePage() {
         subtitle="14–15 July 2026 · Universiti Malaya, Kuala Lumpur"
         badge="July 2026"
       />
+
+      <section className="bg-gradient-to-r from-gold to-gold-light py-8 sm:py-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={prefersReducedMotion ? {} : fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="rounded-2xl border border-navy/10 bg-white/80 p-6 shadow-sm backdrop-blur-sm"
+          >
+            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.25em] text-navy/70">
+                  Programme Resources
+                </p>
+                <h2 className="mt-1 text-2xl font-bold text-navy">
+                  Programme Book Available
+                </h2>
+                <p className="mt-2 max-w-2xl text-sm text-gray-600">
+                  Download the official conference programme book to explore the
+                  full agenda, sessions, and event highlights.
+                </p>
+              </div>
+              <a
+                href="/Programme_Book_ICGSBT2026_.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-navy px-6 py-3 font-semibold text-white transition-colors hover:bg-navy-light"
+              >
+                <FileText size={18} />
+                Download Programme Book
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
       {/* ── Day Tabs ───────────────────────────────────────────────────── */}
       <section className="py-16 bg-white flex-1">
